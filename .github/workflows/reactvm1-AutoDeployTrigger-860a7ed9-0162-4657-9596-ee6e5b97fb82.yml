@@ -37,7 +37,7 @@ jobs:
           appSourcePath: ${{ github.workspace }}
           _dockerfilePathKey_: _dockerfilePath_
           _targetLabelKey_: _targetLabel_
-          registryUrl: 
+          registryUrl: dotnetsamplevm1.azurecr.io
           registryUsername: ${{ secrets.REACTVM1_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.REACTVM1_REGISTRY_PASSWORD }}
           containerAppName: reactvm1
@@ -45,5 +45,6 @@ jobs:
           imageToBuild: default/[parameters('containerAppName')]:${{ github.sha }}
           _buildArgumentsKey_: |
             _buildArgumentsValues_
+
 
 
