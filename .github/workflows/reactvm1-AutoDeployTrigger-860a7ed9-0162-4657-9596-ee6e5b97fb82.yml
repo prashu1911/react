@@ -1,14 +1,13 @@
 name: Trigger auto deployment for reactvm1
 
-# When this action will be executed
 on:
-  # Automatically trigger it when detected changes in repo
+  # Automatically trigger when pushing to main
   push:
     branches: 
-      [ main ]
+      - main
     paths:
-    - '**'
-    - '.github/workflows/reactvm1-AutoDeployTrigger-860a7ed9-0162-4657-9596-ee6e5b97fb82.yml'
+      - '**'
+      - '.github/workflows/reactvm1-AutoDeployTrigger-860a7ed9-0162-4657-9596-ee6e5b97fb82.yml'
 
   # Allow manual trigger 
   workflow_dispatch:      
@@ -17,12 +16,12 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     permissions: 
-      id-token: write #This is required for requesting the OIDC JWT Token
-      contents: read #Required when GH token is used to authenticate with private repo
+      id-token: write   # Required for OIDC JWT Token
+      contents: read    # Required when GH token is used for private repo
 
     steps:
       - name: Checkout to the branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Azure Login
         uses: azure/login@v2
@@ -35,16 +34,10 @@ jobs:
         uses: azure/container-apps-deploy-action@v2
         with:
           appSourcePath: ${{ github.workspace }}
-          _dockerfilePathKey_: _dockerfilePath_
-          _targetLabelKey_: _targetLabel_
+          dockerfilePath: ./Dockerfile   # adjust if Dockerfile is in subfolder
           registryUrl: dotnetsamplevm1.azurecr.io
           registryUsername: ${{ secrets.REACTVM1_REGISTRY_USERNAME }}
           registryPassword: ${{ secrets.REACTVM1_REGISTRY_PASSWORD }}
           containerAppName: reactvm1
           resourceGroup: one_Piece
-          imageToBuild: default/[parameters('containerAppName')]:${{ github.sha }}
-          _buildArgumentsKey_: |
-            _buildArgumentsValues_
-
-
-
+          imageToBuild: dotnetsamplevm1.azurecr.io/reactvm1:${{ github.sha }}
