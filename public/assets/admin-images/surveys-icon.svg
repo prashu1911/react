@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="Group_238420" data-name="Group 238420" transform="translate(-1404 -123)">
+    <rect id="Rectangle_20558" data-name="Rectangle 20558" width="70" height="70" rx="5" transform="translate(1404 123)" fill="#ffeec5"/>
+    <g id="presentation-poll" transform="translate(1070 -1415)">
+      <rect id="Frame" width="50" height="50" transform="translate(344 1548)" fill="#444649" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0"/>
+      <path id="presentation-poll-2" data-name="presentation-poll" d="M385.312,1550.25h-37.5a1.563,1.563,0,0,0,0,3.125h1.563v19.271c0,5.037,2.775,7.813,7.813,7.813H365v3.852l-5.554,3.7a1.562,1.562,0,0,0,1.733,2.6l5.383-3.59,5.383,3.59a1.562,1.562,0,0,0,1.733-2.6l-5.554-3.7v-3.852h7.813c5.038,0,7.813-2.775,7.813-7.812v-19.271h1.563a1.563,1.563,0,0,0,0-3.125Zm-4.687,22.4c0,3.285-1.4,4.688-4.687,4.688h-18.75c-3.285,0-4.687-1.4-4.687-4.687v-19.271h28.125Zm-22.917-1.042v-8.333a1.563,1.563,0,0,1,3.125,0v8.333a1.563,1.563,0,0,1-3.125,0Zm7.292,0v-12.5a1.563,1.563,0,0,1,3.125,0v12.5a1.563,1.563,0,0,1-3.125,0Zm7.292,0v-4.167a1.563,1.563,0,0,1,3.125,0v4.167a1.563,1.563,0,0,1-3.125,0Z" transform="translate(2.438 2.438)" fill="#444649" stroke="rgba(0,0,0,0)" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

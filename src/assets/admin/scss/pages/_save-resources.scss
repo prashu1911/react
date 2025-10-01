@@ -1,0 +1,98 @@
+.saveResources{
+     .note{
+        &-head {
+            padding: 10px 40px 10px 15px;
+            background-color: #e3e5e7;
+            font-weight: 500;
+            color: #0F0F0F;
+            line-height: 1.5;
+            border-radius: 5px 5px 0 0;
+        }
+        &-body{
+            padding: 15px; border: 1px solid #e3e5e7; border-top: 0;border-radius:0 0 5px 5px;
+        }
+     }
+    .accordion {
+        &-body {
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+        &-item {
+            border: none;
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+            &:first-of-type {
+                & > .accordion-header {
+                    .accordion-button {
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        &-button {
+            padding: 10px 40px 10px 15px;
+            background-color: color(100);
+            font-size: 16px;
+            font-weight: 500;
+            color: color(800);
+            line-height: 1.5;
+            border-radius: 5px;
+            &:not(.collapsed) {
+                background-color: color(500);
+                color: color(50);
+                &::after {
+                    transform: rotateX(180deg);
+                    color: color(50);
+                }
+            }
+            &::after {
+                content: "\e90a";
+                font-family: icomoon, sans-serif;
+                font-size: 10px;
+                width: 12px;
+                height: 6px;
+                position: absolute;
+                right: 20px;
+                color: color(250);
+                transition: all 0.5s;
+                background-size: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        .form-check-label{
+            font-size: 16px;
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        .accordion{
+            &-item{
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+            &-button {
+                padding: 10px 30px 10px 10px;
+                font-size: 14px;
+                &::after{
+                    right: 12px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .accordion{
+            .form-check-label{
+                font-size: 14px;
+            }
+            &-body{
+                padding: 15px 10px;
+            }
+        }
+    }
+}

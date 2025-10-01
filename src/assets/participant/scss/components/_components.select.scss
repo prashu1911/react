@@ -1,0 +1,217 @@
+$select-main-color: color(150);
+$select-border-color: color(150);
+$select-arrow: "\e90a";
+$choice-color: #95a09b;
+$icon-color: color(250);
+$placholder-color: rgba(color(250), 0.5);
+
+.selectPicker {
+  .css-13cymwt-control {
+    border-color: $select-border-color;
+    border-radius: 5px;
+    &:hover {
+      border-color: $select-border-color;
+    }
+  }
+  .css-t3ipsp-control {
+    border-color: color(500);
+    box-shadow: none;
+    &:hover {
+      border-color: color(500);
+    }
+  }
+  .css-1jqq78o-placeholder {
+    color: $placholder-color !important;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0px;
+  }
+  .css-1dimb5e-singleValue {
+    font-size: 12px;
+    font-weight: 500;
+    color: color(800);
+  }
+  .css-1u9des2-indicatorSeparator,
+  .css-894a34-indicatorSeparator {
+    display: none;
+  }
+  .css-hlgwow {
+    padding: 0px 15px 0px 15px;
+  }
+  .css-19bb58m {
+    margin: 0px;
+    padding: 0px;
+  }
+  .css-1xc3v61-indicatorContainer,
+  .css-15lsz6c-indicatorContainer {
+    position: relative;
+    padding: 0px;
+    &::after {
+      position: absolute;
+      content: "\e90b";
+      font-family: icomoon, sans-serif;
+      font-size: 8px;
+      display: inline-block;
+      color: color(250);
+      top: -5px;
+      right: -5px;
+    }
+    svg {
+      display: none;
+    }
+  }
+  .css-1wy0on6 {
+    padding-right: 15px;
+  }
+  .css-1nmdiq5-menu {
+    font-size: 12px;
+    margin-top: 4px;
+    overflow: hidden;
+    .css-qr46ko {
+      padding: 0px;
+      .css-d7l1ni-option,
+      .css-tr4s17-option {
+        background-color: color(500);
+        color: color(50);
+      }
+    }
+  }
+  .css-v7duua {
+    position: relative;
+    padding: 0px 15px 0px 0px;
+    &::after {
+      position: absolute;
+      content: "🗙";
+      font-family: icomoon, sans-serif;
+      font-size: 10px;
+      display: inline-block;
+      color: color(250);
+      top: 1px;
+      right: 1px;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+    svg {
+      display: none;
+    }
+  }
+  .css-9jq23d {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    color: color(800);
+  }
+  .css-1p3m7a8-multiValue {
+    background-color: color(100);
+    border-color: transparent;
+    padding: 2px 5px 2px 5px;
+    margin: 3px 3px 3px 0px;
+  }
+}
+.selectPickerParticipant {
+  .css-13cymwt-control {
+    border-color: $select-border-color;
+    border-radius: 5px;
+    &:hover {
+      border-color: $select-border-color;
+    }
+  }
+  .css-t3ipsp-control {
+    border-color: color(500);
+    box-shadow: none;
+    &:hover {
+      border-color: color(500);
+    }
+  }
+  .css-1jqq78o-placeholder {
+    color: $placholder-color !important;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0px;
+  }
+  .css-1dimb5e-singleValue {
+    font-size: 12px;
+    font-weight: 500;
+    color: color(800);
+  }
+  .css-1u9des2-indicatorSeparator,
+  .css-894a34-indicatorSeparator {
+    display: none;
+  }
+  .css-hlgwow {
+    padding: 0px 15px 0px 15px;
+  }
+  .css-19bb58m {
+    margin: 0px;
+    padding: 0px;
+  }
+  .css-1xc3v61-indicatorContainer,
+  .css-15lsz6c-indicatorContainer {
+    position: relative;
+    padding: 0px;
+    // &::after{
+    //   position: absolute;
+    //   content: "\e90b";
+    //   font-family: icomoon, sans-serif;
+    //   font-size:8px;
+    //   display: inline-block;
+    //   color: color(250);
+    //   top: -5px;
+    //   right: -5px;
+    // }
+    svg {
+      display: block;
+    }
+  }
+  .css-1wy0on6 {
+    padding-right: 15px;
+  }
+  .css-1nmdiq5-menu {
+    font-size: 12px;
+    margin-top: 4px;
+    overflow: hidden;
+    .css-qr46ko {
+      padding: 0px;
+      .css-d7l1ni-option,
+      .css-tr4s17-option {
+        background-color: color(500);
+        color: color(50);
+      }
+    }
+  }
+  .css-v7duua {
+    position: relative;
+    padding: 0px 15px 0px 0px;
+    &::after {
+      position: absolute;
+      content: "🗙";
+      font-family: icomoon, sans-serif;
+      font-size: 10px;
+      display: inline-block;
+      color: color(250);
+      top: 1px;
+      right: 1px;
+    }
+    &:hover {
+      background-color: transparent;
+    }
+    svg {
+      display: none;
+    }
+  }
+  .css-9jq23d {
+    padding: 0px;
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    color: color(800);
+  }
+  .css-1p3m7a8-multiValue {
+    background-color: color(100);
+    border-color: transparent;
+    padding: 2px 5px 2px 5px;
+    margin: 3px 3px 3px 0px;
+  }
+}

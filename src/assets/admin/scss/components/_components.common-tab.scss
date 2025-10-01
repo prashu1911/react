@@ -1,0 +1,73 @@
+/* common tab start */
+.commonTab{
+    .nav{
+        &-item{
+            &:not(:last-child){
+                margin-right: 9px;
+            }
+        }
+        &-link{
+            padding: 10px 20px;
+            font-size: 14px; font-weight: 500; line-height: 1.5;
+            border-radius: 5px;
+            color: color(250);
+            background-color: color(100);
+            &.active{
+                background-color: color(500);
+                color: color(50);
+                font-weight: 600;
+            }
+            &:focus-visible{box-shadow: none;}
+        }
+    }
+
+    @include media-breakpoint-down(xxl) {
+        .nav{
+            &-item{
+                &:not(:last-child){
+                    margin-right: 5px;
+                }
+            }
+            &-link{
+                padding: 10px 12px;
+            }
+        }
+    }
+    @media (max-width: 1399px) {
+        .nav{
+            &-link{
+                padding: 10px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        .nav{
+            &-link{
+                height: 36px;
+                line-height: 1;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+        .nav{
+            &-item{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow: auto;
+        &.nav{
+            margin-bottom: 5px;
+            .nav-item {
+                margin-bottom: 5px;
+            }
+        }
+         
+    }
+}
+/* common tab end */

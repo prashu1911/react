@@ -1,0 +1,13 @@
+@import 'modal.common';
+@import 'modal.cloneformexisting';
+@import 'modal.myrequest';
+@import 'modal.reviewedit';
+@import 'modal.faqfilter';
+@import 'modal.questionrearrange';
+@import 'modal.benchmark';
+@import 'modal.editoutcome';
+@import 'modal.editquestion';
+
+.select2-dropdown{
+    z-index: 9999;
+}

@@ -1,0 +1,436 @@
+.preSurveyPage{
+    .pageTitle{
+        margin-bottom: 32px;
+    }
+    .answerBox{
+        &_head{
+            margin-bottom: 34px;
+            h3{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: 15px;
+                color: #707070;
+                line-height: 1.5;
+            }
+        }
+        &_list{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 38px;
+                }
+            }
+            &_ques{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 23px;
+            }
+          
+            ul{
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 38px;
+                    }
+                }
+            }
+            &_options{
+                margin-bottom: 20px;
+                .form-group{
+                    width: calc(25% - 8px);
+                }
+                .form-check{
+                    width: 100%;
+                    &-input[type=radio]{
+                        &:checked{
+                            ~ .form-check-label{
+                                background-color: color(500);
+                                color: color(50);
+                                &::before{
+                                    border-color: color(50);
+                                    background-color: color(500);
+                                }
+                                &::after{
+                                    background-color: color(50);
+                                }
+                            }
+                        }
+                        ~ .form-check-label{
+                            padding: 15px 15px 15px 45px;
+                            font-size: 15px;
+                            font-weight: 400;
+                            color: rgba(color(800), 0.7);
+                            background-color: color(100);
+                            border-radius: 5px;
+                            width: 100%;
+                            &::before{
+                                border-color: color(50);
+                                    background-color: color(500);
+                                // width: 20px; height: 20px; top: 17px;
+                                // left: 15px; border-color: #BBBBBB;
+                            }
+                            &::after{
+                                left: 20px;
+                                top: 22px;
+                                width: 10px; height: 10px;
+                            }
+                        }
+                    }
+                    &-input[type=checkbox]{
+                        left: 21px;
+                        top: 4px;
+                        &:checked{
+                            ~ .form-check-label{
+                                &::before{
+                                    border-color: color(500);
+                                }
+                            }
+                        }
+                        ~ .form-check-label{
+                            color: color(300);
+                            font-size: 15px;
+                            font-weight: 500;
+                            padding-left: 32px;
+                            // padding-top: 0px;
+                            &::before{
+                                width: 20px; height: 20px;
+                                border-color: #BBBBBB;
+                                border-radius: 3px;
+                                // top: 2px;
+                            }
+                            &::after{
+                                left: 5px;
+                                top: 5px;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        textarea{
+            height: 125px;
+            border-radius: 0px;
+            &.form-control{
+                border-color: #CCCCCC;
+                &:focus{
+                    box-shadow: none;
+                    border-color: #CCCCCC;
+                }
+            }
+        }
+
+        .form-check{
+            margin-bottom: 0px;
+            &-input[type=checkbox]{
+                &:checked{
+                    ~ .form-check-label{
+                        &::before{
+                            border-color: color(500);
+                        }
+                    }
+                }
+                ~ .form-check-label{
+                    font-size: 15px;
+                    color: color(300);
+                    font-weight: 500;
+                    // padding-top: 0px;
+                    &::after{
+                        top: 5px;
+                    }
+                    &::before{
+                        border-color: #BBBBBB;
+                        border-radius: 3px;
+                        // top: 2px;
+                    }
+                }
+            } 
+            
+        }
+    }
+    .ratingBox{
+        &_list{
+            display: flex;
+            margin-bottom: 15px;
+            &question{
+                font-size: 16px;
+                font-weight: 400;
+                color: color(300);
+                width: 50%;
+                flex-shrink: 0;
+            }
+            &Head{
+                .column{
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: left;
+                    &-1{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .column{
+        text-align: center;
+            &-2,&-3,&-4,&-5,&-6{
+                width: 112px;
+                padding: 12px 22px;
+            }
+          
+        }
+    }
+    .descriptionBox{
+        p{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        textarea{
+            min-height: 124px;
+            &.form-control{
+                &:focus{
+                    box-shadow: none;
+                    border-color: #dee2e6;
+                }
+            }
+        }
+    }
+    hr{
+        margin: 35px 0px;
+        border-color: #CCCCCC;
+    }
+    .skipcheckBox{
+        margin-top: 20px;
+        .form-check{
+            margin-bottom: 0px;
+            &-input[type=checkbox]{
+                width: 20px;
+                height: 20px;
+                &:checked{
+                    ~ .form-check-label{
+                        &::before{
+                            border-color: color(500);
+                        }
+                        &::after{
+                            left: 3px;
+                            top: 7px;
+                        }
+                    }
+                }
+                ~ .form-check-label{
+                    font-size: 15px;
+                    color: color(300);
+                    font-weight: 500;
+                    // padding-top: 0px;
+                    &::after{
+                        top: 7px;
+                        left: 3px;
+                    }
+                    &::before{
+                        border-color: #BBBBBB;
+                        border-radius: 3px;
+                        // top: 2px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            } 
+            
+        }
+    }
+   
+    @include media-breakpoint-down(xxl){
+        .pageTitle {
+            margin-bottom: 20px;
+        }
+        .ratingBox {
+            .form-group label span{
+                font-size: 14px;
+            }
+        }
+        .answerBox{
+            &_head {
+                margin-bottom: 25px;
+                h3{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+            &_list{
+                    li{
+                        &:not(:last-child){
+                            margin-bottom: 25px;
+                        }
+                    }
+                &_ques{
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+            } 
+        }
+        hr{
+            margin: 25px 0px;
+        }
+    }
+
+    @media (max-width: 1399px) {
+        .answerBox{
+            &_head{
+                margin-bottom: 15px;
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+            }
+            &_list{
+                &_ques{
+                    font-size: 16px;
+                }
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        hr{
+            margin: 15px 0px;
+        }
+    }
+    @include media-breakpoint-down(xl){
+        .ratingBox{
+            .column{
+                &-2, &-3, &-4, &-5, &-6{
+                    width: auto;
+                }
+            }
+            &_list{
+                &Head{
+                    .column{
+                        font-size: 16px;
+                    }
+                    .column-1{
+                        width: 100%;
+                    }
+                }
+                &question{
+                    width: 100%;
+                    font-size: 15px;
+                } 
+            }
+        }
+        
+       .form-check-input[type=radio],.form-check-input[type=checkbox]{
+        ~ .form-check-label {
+             font-size: 14px;
+        }
+       } 
+     
+
+       .form-check-input[type=checkbox]{
+        ~ .form-check-label {
+            &::before{
+                top: 5px;
+            }
+            &::after{
+                top: 6px;
+            }
+        }
+    }
+    .descriptionBox{
+        p{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+    .pageTitle {
+        margin-bottom: 15px;
+    }
+    .skipcheckBox{
+        margin-top: 15px;
+        .form-check-input[type=checkbox]{
+            ~ .form-check-label {
+                padding-left: 26px;
+                &::before{
+                    top: 5px;
+                }
+                &::after{
+                    top: 6px;
+                }
+            }
+        }
+    }
+
+    }
+    @include media-breakpoint-down(lg){
+        .answerBox{
+            &_head{
+                p{
+                    font-size: 14px;
+                }
+            }
+            &_list{
+                &_ques{
+                    margin-bottom: 10px;
+                }
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .form-check-input{
+                &[type=checkbox],&[type=radio]{
+                    ~ .form-check-label{
+                        font-size: 13px;
+                    }
+                }
+                &[type=checkbox] ~ .form-check-label{
+                   &::after{
+                    left: 4px;
+                    font-size: 10px;            
+                   }
+                }
+            } 
+        } 
+        hr{
+            margin: 15px 0px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .ratingBox{
+            .column {
+                width: 100% !important;
+                text-align: left !important;
+            }
+        }
+        .descriptionBox{
+            p{
+                font-size: 15px;
+            }
+        }
+        .skipcheckBox{
+            .form-check{
+                &-input[type=checkbox]{
+                    &:checked{
+                        ~ .form-check-label{
+                            &::after{
+                                top: 5px;
+                            }
+                        }
+                    }
+                    ~ .form-check-label{
+                        &::after{
+                            top: 5px;
+                        }
+                        &::before{
+                            top: 1px;
+                        }
+                    }
+                } 
+                
+            }
+        }
+    }
+}

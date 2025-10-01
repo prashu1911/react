@@ -1,0 +1,241 @@
+.commonQuestion {
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    color: color(900);
+    margin-bottom: 23px;
+  }
+  @include media-breakpoint-down(xl) {
+    p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    p {
+      font-size: 16px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    p {
+      font-size: 15px;
+    }
+  }
+}
+.allOptions {
+  margin-bottom: 20px;
+  .form-group {
+    width: calc(25% - 8px);
+  }
+  .facilitatesPrompt {
+    div {
+      width: 108px;
+    }
+    span {
+      font-size: 15px;
+      font-family: 400;
+      color: rgba(color(800), 0.7);
+    }
+    a {
+      width: 32px;
+      height: 34px;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      em {
+        color: color(50);
+        font-size: 14px;
+      }
+    }
+    &_downBtn {
+      background-color: #f37f73;
+      &:hover {
+        background-color: darken(#f37f73, 7%);
+      }
+    }
+    &_upBtn {
+      background-color: #ff9f51;
+      transform: rotate(180deg);
+      &:hover {
+        background-color: darken(#ff9f51, 7%);
+      }
+    }
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+  .form-check {
+    width: 100%;
+    &-input[type="radio"] {
+      &:checked {
+        ~ .form-check-label {
+          background-color: color(500);
+          color: color(50) !important;
+          &::before {
+            border-color: color(50);
+            background-color: color(500);
+          }
+          &::after {
+            background-color: color(50);
+          }
+        }
+      }
+      ~ .form-check-label {
+        padding: 15px 15px 15px 45px;
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(color(800), 0.7);
+        background-color: color(100);
+        border-radius: 5px;
+        width: 100%;
+        &::before {
+          width: 20px;
+          height: 20px;
+          top: 17px;
+          left: 15px;
+          border-color: #bbbbbb;
+        }
+        &::after {
+          left: 20px;
+          top: 22px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+    &-input[type="checkbox"] {
+      left: 21px;
+      top: 4px;
+      &:checked {
+        ~ .form-check-label {
+          background-color: color(500);
+          color: color(50) !important;
+          // &::before {
+          //   border-color: color(50);
+          //   background-color: color(500);
+          // }
+          // &::after {
+          //   background-color: color(50);
+          // }
+        }
+      }
+      ~ .form-check-label {
+        padding: 15px 15px 15px 45px;
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(color(800), 0.7);
+        background-color: color(100);
+        border-radius: 5px;
+        width: 100%;
+        &::before {
+          width: 20px;
+          height: 20px;
+          top: 17px;
+          left: 15px;
+          border-color: #bbbbbb;
+        }
+        &::after {
+          left: 20px;
+          top: 22px;
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(xl) {
+    .form-check-input[type="radio"] {
+      ~ .form-check-label {
+        padding: 10px 10px 10px 40px;
+        &::before {
+          width: 18px;
+          height: 18px;
+          top: 12px;
+          left: 15px;
+        }
+        &::after {
+          width: 10px;
+          height: 10px;
+          top: 16px;
+          left: 19px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 15px;
+    .form-check-input[type="radio"] {
+      ~ .form-check-label {
+        &::before {
+          top: 11px;
+        }
+        &::after {
+          top: 15px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .form-group {
+      width: calc(33% - 8px);
+    }
+    .form-check-input[type="radio"] {
+      ~ .form-check-label {
+        padding: 10px 10px 10px 37px;
+        &::after {
+          left: 15px;
+        }
+        &::before {
+          left: 11px;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .form-group {
+      width: calc(50% - 8px);
+    }
+  }
+  @media (max-width: 420px) {
+    .form-group {
+      width: calc(100% - 0px);
+    }
+  }
+}
+
+.facilitatesPrompt {
+  div {
+    width: 108px;
+  }
+  a {
+    width: 32px;
+    height: 34px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    em {
+      color: color(50);
+      font-size: 14px;
+    }
+  }
+  &_downBtn {
+    background-color: #f37f73;
+    &:hover {
+      background-color: darken(#f37f73, 7%);
+    }
+  }
+  &_upBtn {
+    background-color: #ff9f51;
+    transform: rotate(180deg);
+    &:hover {
+      background-color: darken(#ff9f51, 7%);
+    }
+  }
+}

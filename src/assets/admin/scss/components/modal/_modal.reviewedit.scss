@@ -1,0 +1,35 @@
+/*review and edit page modal size*/
+ .reviewEditModal{
+    .modal-dialog{
+        min-width: 490px;
+        &-md{min-width:565px;}
+    }
+    &_md{min-width: 565px;}
+    .modalHead{
+        margin: -10px 0 20px;
+        .subtitle{font-size: 22px; line-height: 1.8;font-weight: 600; color: color(800);}
+        .title{font-size: 30px; color: color(500);font-weight: 600;}
+    }
+    .modal-body{
+        p{font-size: 14px; color: rgba(color(800), 0.6); line-height: 1.5;
+            &.text-dark{color: color(800);}
+        }
+    }
+    @include media-breakpoint-down(xxl){
+        .modalHead{
+            margin: -10px 0 15px;
+            .subtitle{font-size: 20px;}
+            .title{font-size: 25px;}
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .modalHead{
+            .subtitle{font-size: 18px;}
+            .title{font-size: 20px;}
+        }
+        .modal-dialog{
+            min-width: inherit;
+        }
+    }
+
+ }

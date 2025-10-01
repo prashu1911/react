@@ -1,0 +1,131 @@
+.questionModal{
+    .ratingQuestion{
+        &_Head{
+            font-size: 16px;
+            font-weight: 600;
+            color: color(800);
+            margin-bottom: 8px;
+        }
+        .form-check-input{
+            &[type=radio]~.form-check-label {
+                color: color(800);
+            }
+            &[type=checkbox]{
+                left: 22px;
+                width: 16px;
+                height: 16px;
+                &~.form-check-label{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: color(800);
+                    padding-left: 26px;
+                    padding-top: 0;
+                    &::before{
+                        width: 16px;
+                        height: 16px;
+                        top: 3px;
+                    }
+                    &::after{
+                        font-size: 9px;
+                        top: 5px;
+                        left: 4px;
+                    }
+                }
+                
+            }
+        }
+        &_Subhead{
+            font-size: 14px;
+            font-weight: 700;
+            color: color(800);
+            margin-bottom: 14px;
+        }
+        .icon-info-circle{
+            font-size: 15px;
+            color: color(200);
+        }
+        .sequence{
+            .icon-drag {
+                font-size: 16px;
+                color: color(150);
+                margin-right: 16px;
+            }
+        }
+        .subQuestion{
+            .maximum {
+                width: 80% !important;
+            }
+        } 
+        .multiResponse{
+            padding: 20px;
+            border: 1px solid #CDCED0;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            position: relative;
+            &_deleteBtn {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                width: 30px;
+                height: 30px;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    
+    
+        @include media-breakpoint-down(lg) {
+            .scalarSec {
+                width: 871px;
+                white-space: nowrap;
+                overflow: initial;
+                &Cover {
+                    overflow: auto;
+                }
+            }
+        }
+        @include media-breakpoint-down(md) {
+            .scalarSec {
+                width: 700px;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            .scalarSec {
+                width: 600px;
+            }
+        }
+    }
+    .visibleDemographicPage{
+        .addDemographicFilter{
+            &_addlevel{
+                display: flex;
+                align-items: end;
+                gap: 8px;
+                .form-group{
+                    &:nth-child(1) {
+                        width: 20%;
+                    }
+                    &:nth-child(2) {
+                        width: 72%;
+                    }
+                }
+                button{
+                    margin-bottom: 20px;
+                    width: 110px;
+                    flex-shrink: 0;
+                }
+            }
+            &_response{
+                .selectPicker {
+                    width: 200px;
+                    flex-shrink: 0;
+                }
+                .scalar {
+                    width: calc(100% - 120px) !important;
+                }
+            } 
+        }
+    }
+}

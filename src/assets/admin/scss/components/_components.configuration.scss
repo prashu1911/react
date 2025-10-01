@@ -1,0 +1,190 @@
+.scalarSec {
+    > div {
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+        color: color(800);
+        line-height: 1.5;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        em {
+            font-size: 16px;
+            color: color(200);
+        }
+    }
+    .sequence {
+        width: 70px;
+        flex-shrink: 0;
+        a{color: color(150);}
+    }
+    .scalar {
+        width: 34%;
+    }
+    .minimum {
+        width: 15%;
+    }
+    .maximum {
+        width: 20%;
+    }
+    .color {
+        width: 62px;
+        input {
+            background: color(100);
+            border: transparent;
+        }
+        .form-control {
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    .form {
+        &-group {
+            margin-bottom: 0px;
+        }
+        &-control {
+            &-color {
+                width: 57px;
+                height: 40px;
+                padding: 6px 15px;
+                display: block;
+            }
+        }
+    }
+    .addeletebtn {
+        width: 90px;
+        text-align: center;
+        justify-content: center;
+        a, button {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            padding: 11px;
+            align-items: center;
+            justify-content: center;
+            border: 0;
+           
+            &.addbtn {
+                background-color: #ff9f51;
+                span {
+                    font-size: 30px;
+                    color: color(50);
+                    display: flex;
+                    line-height: 1;
+                }
+            }
+            &.deletebtn {
+                background-color: #f37f73;
+                em {
+                    color: color(50);
+                    font-size: 16px;
+                    margin-right: 0px;
+                }
+            }
+            &.invisibledeletebtn {
+                visibility: hidden;
+                background-color: #f37f73;
+                em {
+                    color: color(50);
+                    font-size: 16px;
+                    margin-right: 0px;
+                }
+            }
+            &.confettibtn{
+                background-color: color(500);
+            }
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        > div{
+            margin-bottom: 10px;
+        }
+        .form-control-color {
+            width: 50px;
+            height: 36px;
+            padding: 6px 10px;
+        }
+        .addeletebtn{
+            a{
+                width: 36px; height: 36px;
+                &.addbtn{
+                    span{
+                        font-size: 24px;
+                    }
+                } 
+            }
+        }
+        .invisibledeletebtn{
+            a{
+                width: 36px; height: 36px;
+                visibility: hidden;
+                &.addbtn{
+                    span{
+                        font-size: 24px;
+                    }
+                } 
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        overflow: auto;
+        .sequence,.scalar,.maximum,.color,.addeletebtn {
+            flex-shrink: 0;
+        }
+        .scalar{
+            width: 96px;
+        }
+        .maximum {
+            width: 80px;
+        }
+    }
+}
+.addeletebtn {
+
+    text-align: center;
+    justify-content: center;
+    a, button {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        display: flex;
+        padding: 11px;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+       
+        &.addbtn {
+            background-color: #ff9f51;
+            span {
+                font-size: 30px;
+                color: color(50);
+                display: flex;
+                line-height: 1;
+            }
+        }
+        &.deletebtn {
+            background-color: #f37f73;
+            em {
+                color: color(50);
+                font-size: 16px;
+                margin-right: 0px;
+            }
+        }
+        &.invisibledeletebtn {
+            visibility: hidden;
+            background-color: #f37f73;
+            em {
+                color: color(50);
+                font-size: 16px;
+                margin-right: 0px;
+            }
+        }
+        &.confettibtn{
+            background-color: color(500);
+        }
+    }
+}

@@ -1,0 +1,190 @@
+.reportCard{
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    &_title{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &_para{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    &_opComment {
+        img {
+            max-width: 100% !important;
+            height: auto !important;
+            display: block;
+        }
+    
+        figure.image {
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto;
+        overflow: hidden;
+        }
+    }
+
+    .w-1{width: 1%;}
+    table{
+        width: 100%;
+        th{
+            padding: 10px;
+            background-color: color(100);
+            font-size: 15px;
+            text-transform: capitalize;
+            white-space: nowrap;
+        }
+        td{
+            padding: 6px;
+            font-size: 15px;
+        }
+        th,td{
+            border: 1px solid #CCCCCC;
+            border-collapse: collapse;
+        }
+    }
+    &_table{
+        overflow-x: auto;
+    }
+    &_info{
+        padding-top: 10px;
+        margin-top: 20px;
+        border-top: 1px solid #CCCCCC;
+    }
+
+    &_chart{
+        padding: 20px;
+        border: 1px solid #CCCCCC;
+        display: block;
+        border-radius: 5px;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    .responseBox{
+        border: 1px solid #E6E6E6;
+        &_left{
+            width: 408px;
+            padding: 16px;
+            border-right: 1px solid #E6E6E6;
+        }
+        &_right{
+            width: calc(100% - 408px);
+            padding: 16px;
+        }
+        &_title{
+            font-size: 13px;
+            font-weight: 500;
+            color: color(250);
+            text-transform: uppercase;
+        }
+        &_txt{
+            font-size: 14px;
+            font-weight: 400;
+            color: color(800);
+        }
+        @media(max-width: 1399px) {
+            &_left,&_right{
+                padding: 12px;
+            }
+            &_left{
+                width: 250px;
+            }
+            &_right{
+                width: calc(100% - 250px);
+            }
+        }
+        @include media-breakpoint-down(md){
+            flex-direction: column;
+            &_left{
+                width: 100%;
+                border-right: 0;
+                border-bottom: 1px solid #E6E6E6;
+            }
+            &_right{
+                width: 100%;
+            }
+            &_left,&_right{
+                padding: 10px;
+            }
+            &_txt{
+                font-size: 13px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xxl){
+        padding: 15px;
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+        &_title{
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        &_para{
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+    @include media-breakpoint-down(xl){
+        &_info{
+            margin-top: 15px;
+        }
+        &_chart{
+            padding: 15px;
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg){
+        &_title{
+            font-size: 16px;
+        }
+        &_table{
+            &_data{
+                width: 734px;
+            }
+        }
+        table{
+            th{
+                padding: 10px;
+                font-size: 14px;
+            }
+            td{
+                padding: 6px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        &_para{
+            margin-bottom: 10px;
+        }
+        &_chart{
+            padding: 10px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &_title{
+            margin-bottom: 10px;
+        }
+        &_info{
+            margin-top: 10px;
+        }
+       &_barchart{
+        width: 100%;
+        overflow-x: auto;
+            &_inner{
+                min-width: 500px;
+            }
+       }
+    }
+}

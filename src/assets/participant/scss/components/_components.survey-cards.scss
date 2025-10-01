@@ -1,0 +1,156 @@
+/* survey cards start */
+.surveyCards{
+    padding: 35px 40px;background-color: color(50);border-radius: 10px;
+    box-shadow: 3px 3px 40px rgba(color(900),0.05);margin-bottom: 16px;
+    &_inner{
+        margin-bottom: 30px;
+    }
+    &_left{
+        h3{
+            font-size: 36px;font-weight: 600;margin-bottom: 17px;
+        }
+        li{
+            font-size: 20px;color: color(300);
+            span{
+                font-weight: 600;
+            }
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &_right{
+        text-align: right;
+        p{font-size: 20px;color: color(300);}
+        span{
+            font-size: 60px;font-weight: 600;line-height: 1;
+        }
+    }
+    &_progress{
+        font-size: 20px;margin-bottom: 0;
+        &.inprogress{
+            color: color(500);
+        }
+        &.completed{
+            color: $success;
+        }
+        &.newlyadded{
+            color: #FFA030;
+        }
+    }
+    @media(max-width: 1599px){
+        padding: 30px;
+        &_inner{
+            margin-bottom: 25px;
+        }
+        &_left{
+            h3{
+                font-size: 32px;margin-bottom: 15px;
+            }
+            li{
+                font-size: 18px;
+            }
+        }
+        &_right{
+            p{font-size: 18px;}
+            span{
+                font-size: 54px;
+            }
+        }
+        &_progress{
+            font-size: 18px;
+        }
+    }
+    @include media-breakpoint-down(xxl) {
+        padding: 25px;margin-bottom: 12px;
+        &_inner{
+            margin-bottom: 20px;
+        }
+        &_left{
+            h3{
+                font-size: 28px;margin-bottom: 10px;
+            }
+            li{
+                font-size: 16px;
+            }
+        }
+        &_right{
+            p{font-size: 16px;}
+            span{
+                font-size: 48px;
+            }
+        }
+        &_progress{
+            font-size: 16px;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        padding: 20px;
+        &_inner{
+            margin-bottom: 15px;
+        }
+        &_left{
+            h3{
+                font-size: 22px;
+            }
+            li{
+                font-size: 14px;
+            }
+        }
+        &_right{
+            p{font-size: 14px;margin-bottom: 10px;}
+            span{
+                font-size: 42px;
+            }
+        }
+        &_progress{
+            font-size: 14px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        padding: 15px;
+        &_inner{
+            margin-bottom: 10px;
+        }
+        &_left{
+            h3{
+                font-size: 18px;
+            }
+            li{
+                &:not(:last-child){
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        &_right{
+            span{
+                font-size: 32px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        &_left{
+            flex: 0 0 100%;
+            h3{
+                font-size: 16px;margin-bottom: 5px;
+            }
+            ul{
+                margin-bottom: 5px;
+            }
+        }
+        &_inner{
+            flex-wrap: wrap;
+        }
+        &_right{
+            text-align: left;flex: 0 0 100%;
+            p{margin-bottom: 8px;}
+            span{
+                font-size: 24px;
+            }
+        }
+        &_progress{
+            margin-bottom: 10px;
+        }
+    }
+}
+/* survey cards end */

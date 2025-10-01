@@ -1,0 +1,162 @@
+[
+    {
+        "id":"01",
+        "department": "DevOps",
+        "assigned": "-",
+        "start-date": "-",
+        "end-date": "-",
+        "days-open": "-",
+        "days-close": "-",
+        "start-email": "-",
+        "days-until": "-",
+        "reminder":"-",
+        "reminder-interval":"-" ,
+        "action": {
+            "icon": "secondary"
+        }
+    },
+    {
+        "id":"02",
+        "department": "Business Analysis",
+        "assigned": "50",
+        "start-date": "07/19/2024",
+        "end-date": "10",
+        "days-open": "5",
+        "days-close": "1",
+        "start-email": "-",
+        "days-until": "5",
+        "reminder":"-",
+        "reminder-interval":"-" ,
+        "action": {
+            "icon": "success"
+        }
+    },
+    {
+        "id":"03",
+        "department": "Business Development",
+        "assigned": "-",
+        "start-date": "-",
+        "end-date": "-",
+        "days-open": "-",
+        "days-close": "-",
+        "start-email": "-",
+        "days-until": "-",
+        "reminder":"-",
+        "reminder-interval":"-",
+        "action": {
+            "icon": "secondary"
+        }
+    },
+    {
+        "id":"04",
+        "department": "Testing team",
+        "assigned": "-",
+        "start-date": "-",
+        "end-date": "-",
+        "days-open": "-",
+        "days-close": "-",
+        "start-email": "-",
+        "days-until": "-",
+        "reminder":"-",
+        "reminder-interval":"-",
+        "action": {
+            "icon": "secondary"
+        } 
+    },
+    {
+        "id":"05",
+        "department": "Inter-Department",
+        "assigned": "-",
+        "start-date": "-",
+        "end-date": "-",
+        "days-open": "-",
+        "days-close": "-",
+        "start-email": "-",
+        "days-until": "-",
+        "reminder":"-",
+        "reminder-interval":"-",
+        "action": {
+            "icon": "secondary"
+        }
+    },
+    {
+        "id":"06",
+        "department": "DevOps",
+        "assigned": "-",
+        "start-date": "-",
+        "end-date": "-",
+        "days-open": "-",
+        "days-close": "-",
+        "start-email": "-",
+        "days-until": "-",
+        "reminder":"-",
+        "reminder-interval":"-",
+        "action": {
+            "icon": "secondary"
+        } 
+    },
+    {
+        "id":"07",
+        "department": "Designing",
+        "assigned": "60",
+        "start-date": "07/19/2024",
+        "end-date": "10",
+        "days-open": "5",
+        "days-close": "1",
+        "start-email": "-",
+        "days-until": "5",
+        "reminder":"-",
+        "reminder-interval":"-",
+        "action": {
+            "icon": "success"
+        } 
+    },
+    {
+        "id":"08",
+        "department": "React JS",
+        "assigned": "-",
+        "start-date": "-",
+        "end-date": "-",
+        "days-open": "-",
+        "days-close": "-",
+        "start-email": "-",
+        "days-until": "-",
+        "reminder":"-",
+        "reminder-interval":"-",
+        "action": {
+            "icon": "secondary"
+        } 
+    },
+    {
+        "id":"09",
+        "department": "Marketing team",
+        "assigned": "-",
+        "start-date": "-",
+        "end-date": "-",
+        "days-open": "-",
+        "days-close": "-",
+        "start-email": "-",
+        "days-until": "-",
+        "reminder":"-",
+        "reminder-interval":"-",
+        "action": {
+            "icon": "secondary"
+        } 
+    },
+    {
+        "id":"10",
+        "department": "Inter-Department",
+        "assigned": "-",
+        "start-date": "-",
+        "end-date": "-",
+        "days-open": "-",
+        "days-close": "-",
+        "start-email": "-",
+        "days-until": "-",
+        "reminder":"-",
+        "reminder-interval":"-",
+        "action": {
+            "icon": "secondary"
+        }
+    }
+]

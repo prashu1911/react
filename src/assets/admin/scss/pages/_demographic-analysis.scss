@@ -1,0 +1,354 @@
+.demographicAnalysis {
+    &_Body{
+        padding: 30px 20px 40px 20px;
+        .optionCollapse{
+            border: 1px solid #E6E6E6;
+            border-bottom: none;
+        }
+        .formCard{
+            padding: 0px;
+            border: none;
+        }
+    }
+    &.pageContent{
+        padding: 0px;
+    }
+    .chartOptionBtn{
+        color: color(50);
+        font-size: 14px;
+        border-color: #E9F1FA;
+        &[aria-expanded="true"]{
+            color: color(50); background-color: color(500);
+            .icon-drop-down{
+                transform: rotate(180deg) !important; color: color(50);
+            }
+        }
+        .icon-drop-down{
+            font-size: 8px;
+        }
+    }
+    .palleteBtn{
+        background-color: color(200);
+        border-color: color(200);
+        &[aria-expanded="true"]{
+            background-color: color(500);
+            .icon-drop-down{
+                transform: rotateX(180deg) !important;
+                transition: ease-in 0.3s;
+            }
+        }
+        em{
+            font-size: 8px;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            transition: ease-in 0.3s;
+        }
+    }
+    .colorOpacity {
+        margin: 18px 0px;
+        input[type="range"] {
+            width: 100%;
+        }
+    }
+    .apexcharts-legend{
+        padding: 0px;
+    }
+    
+    .demographicFilter{
+        &_inner{
+            width: calc(100% - 300px);
+            gap: 10px;
+        }
+        .assessmentSelect,.companySelect{
+            width: calc(50% - 100px);
+        }
+        .defaultChart{
+            width: 300px;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+    }
+    @media(max-width: 1399px) {
+        .demographicFilter{
+            &_inner{
+                width: calc(100% - 290px);
+            }
+            .defaultChart{
+                width: 290px;
+            }
+            .companySelect{
+                width: calc(40% - 0px);
+            }
+            .assessmentSelect{
+                width: calc(60% - 0px);
+            }
+        } 
+       
+    }
+    @include media-breakpoint-down(xl){
+        &_Body{
+            padding:20px 15px;
+        }
+        .palleteBtn{
+            em{
+                right: 15px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg){
+        &_Body{
+            padding: 15px;
+        }
+        
+        .demographicFilter{
+            flex-wrap: wrap;
+            &_inner{
+                width: calc(100% - 0px);
+            }
+            .defaultChart {
+                margin-top: 10px;
+                width: auto;
+            }
+        }
+    }
+    @include media-breakpoint-down(md){
+        .colorOpacity {
+            margin: 8px 0px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .demographicFilter{
+            &_inner{
+                flex-wrap: wrap;
+            }
+            .companySelect,.assessmentSelect{
+                width: calc(100% - 0px);
+            }
+            .defaultChart {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+.analyticsCollapse{
+    padding: 20px;
+    background-color: rgba(color(100),0.5);
+    border-bottom: 1px solid rgba(#CDCED0,0.5);
+    form{
+        padding-top: 16px;
+    }
+    &_Header{
+        font-size: 20px;
+        color: color(800);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        font-weight: 600;
+        width: 100%;
+        background-color: transparent;
+        border: 0;
+        em{
+            font-size: 16px;
+            color: color(250);
+            transition: ease-in 0.3s;
+        }
+        &[aria-expanded="true"]{
+            .icon-drop-down{
+                transform: rotateX(180deg) !important;
+                transition: ease-in 0.3s;
+            }
+        }
+    }
+    @include media-breakpoint-down(xl){
+        padding: 15px;
+    }
+    @include media-breakpoint-down(lg){
+        &_Header{
+            font-size: 18px;
+            em{
+                font-size: 14px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &_Header{
+            font-size: 16px;
+        }
+    }
+}
+.responseBox{
+    border: 1px solid #E6E6E6;
+    &_left{
+        width: 408px;
+        padding: 16px;
+        border-right: 1px solid #E6E6E6;
+    }
+    &_right{
+        width: calc(100% - 408px);
+        padding: 16px;
+    }
+    &_title{
+        font-size: 13px;
+        font-weight: 500;
+        color: color(250);
+        text-transform: uppercase;
+    }
+    &_txt{
+        font-size: 14px;
+        font-weight: 400;
+        color: color(800);
+    }
+    @media(max-width: 1399px) {
+        &_left,&_right{
+            padding: 12px;
+        }
+        &_left{
+            width: 250px;
+        }
+        &_right{
+            width: calc(100% - 250px);
+        }
+    }
+    @include media-breakpoint-down(md){
+        flex-direction: column;
+        &_left{
+            width: 100%;
+            border-right: 0;
+            border-bottom: 1px solid #E6E6E6;
+        }
+        &_right{
+            width: 100%;
+            overflow: auto;
+        }
+        &_left,&_right{
+            padding: 10px;
+        }
+        &_txt{
+            font-size: 13px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        &_chart{
+            overflow-x: auto;
+            &_inner{
+                overflow: auto;
+                .recharts-responsive-container{
+                    width: 500px !important;
+                }
+            }
+        }
+       
+    }
+}
+.optionCollapse{
+    padding:  0px; background-color: color(50); position: relative;
+    &Filter{
+        .borderArrow{
+            right: auto;
+            left: calc(100% - 450px);
+        }
+    }
+    &_inner{
+        ul{
+            row-gap: 16px;
+        }
+    }
+    .borderArrow{
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -19px;
+        right: 6%;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid color(50);
+    }
+    .selectPalette{
+        width: calc(11% - 10px);
+        flex-shrink: 0;
+        input{
+            &[type="color"]{
+                width: 60px;
+                height: 38px;
+            }
+        }
+        button{
+            width: 100%;
+            position: relative;
+            justify-content: flex-start;
+        }
+    }
+    .customOption{
+        width: calc(30% - 10px);
+        flex-shrink: 0;
+        .from-group{
+            width: 100%;
+        }
+    }
+    @include media-breakpoint-down(xxl){
+        .selectPalette{
+            width: calc(13% - 10px);
+        }
+        .customOption{
+            width: calc(29% - 10px);
+        }
+        .form-group{
+            label{
+                span{
+                    font-size: 14px;
+                }
+            } 
+        } 
+    
+    }
+    @media(max-width: 1399px) {
+        padding: 20px 0px;
+        .customOption{
+            width: calc(28% - 10px);
+        }
+        .selectPalette{
+            width: calc(16% - 10px);
+        }
+        &Filter{
+            .borderArrow{
+                left: calc(100% - 338px);
+            }
+        }
+    }
+    @include media-breakpoint-down(xl){
+        .borderArrow{
+            display: none;
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        padding: 0px;
+        .selectPalette,.customOption{
+            width: auto;
+        }
+        ul{
+            column-gap: 10px;
+            li{
+                width: calc(33% - 10px) !important;
+            }
+        }
+        
+    }
+    @include media-breakpoint-down(md){
+        ul{
+            row-gap: 10px;
+            li{
+                width: calc(50% - 10px) !important;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        ul{
+            li{
+                width: calc(100% - 0px) !important;
+            }
+        }
+    }
+}

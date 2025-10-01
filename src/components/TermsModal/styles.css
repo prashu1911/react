@@ -1,0 +1,15 @@
+.mainSectionHeading {
+  margin: 7.5pt 0cm;
+  line-height: normal;
+}
+
+.mainSectionHeadingspan {
+   font-size: 10.0pt;
+   font-family: Arial, Helvetica, sans-serif; 
+   color: #202998;
+}
+
+.sectionText {
+    font-size: 10.5pt;
+    color: #212529 ;
+}

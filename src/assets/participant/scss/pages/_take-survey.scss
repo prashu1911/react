@@ -1,0 +1,807 @@
+.takeSurvey{
+    .survey-details-banner{
+        padding: 40px 0px 20px;
+        min-height: 100%; 
+        h1{
+            font-size: 40px;
+            margin-bottom: 1rem;        
+        }
+        ul{
+            margin-bottom: 2rem !important;
+        }
+    }
+    .takeSurvey-progress{
+        background-color: #e9ecef !important;
+    }
+   .takeSurvey-progress-bar{
+        background-color: #0968AC !important;
+   }
+    .commonBanner{
+        // padding: 10px 0px 10px;
+        padding:0;
+        &_inner{
+            // padding-top: 30px;
+            width: calc(100% - 270px);
+            margin-right: 10px;
+        }
+        ul{ margin-bottom: 78px;
+            li{ position: relative;font-size: 20px;color: color(300);
+                &:not(:last-child){
+                    padding-right: 13px;margin-right: 13px;
+                    &::after{
+                        position: absolute;top: 50%;right: 0;transform: translateY(-50%);
+                        border-right: 1px solid color(300);content: "";height: 16px;
+                    }
+                }
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+        p{
+            color: color(200);
+        }
+        &_report{
+            width: 350px; height: 100%; overflow: hidden;
+            
+            border-radius: 10px;
+            background-color: color(50);
+            padding: 17px 5px 0px;
+            // box-shadow: 3px 3px 40px rgba(color(900),0.05);
+            h3{margin-bottom: 5px;font-size: 18px;font-weight: 600;}
+            &_box{
+            div[type="radialBar"]{
+                    margin: auto;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    overflow: hidden;
+                }
+            }
+         }
+    }
+    .pageTitle{
+        margin-bottom: 32px;
+    }
+    .answerBox{
+        .assessingTable {
+            padding-top: 1px;
+        }
+        &_head{
+            margin-bottom: 34px;
+            h3{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: 15px;
+                color: #707070;
+                line-height: 1.5;
+            }
+        }
+        &_list{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 38px;
+                }
+            }
+            &_ques{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 23px;
+            }
+          
+            ul{
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 38px;
+                    }
+                }
+            }
+            &_options{
+                margin-bottom: 20px;
+                .form-group{
+                    width: calc(25% - 8px);
+                }
+                .form-check{
+                    width: 100%;
+                    &-input[type=radio]{
+                        &:checked{
+                            ~ .form-check-label{
+                                background-color: color(500);
+                                color: color(50);
+                                &::before{
+                                    border-color: color(50);
+                                    background-color: color(500);
+                                }
+                                &::after{
+                                    background-color: color(50);
+                                }
+                            }
+                        }
+                        ~ .form-check-label{
+                            padding: 15px 15px 15px 45px;
+                            font-size: 15px;
+                            font-weight: 400;
+                            color: rgba(color(800), 0.7);
+                            background-color: color(100);
+                            border-radius: 5px;
+                            width: 100%;
+                            &::before{
+                                width: 20px; height: 20px; top: 17px;
+                                left: 15px; border-color: #BBBBBB;
+                            }
+                            &::after{
+                                left: 20px;
+                                top: 22px;
+                                width: 10px; height: 10px;
+                            }
+                        }
+                    }
+                    &-input[type=checkbox]{
+                        left: 21px;
+                        top: 4px;
+                        &:checked{
+                            ~ .form-check-label{
+                                &::before{
+                                    border-color: color(500);
+                                }
+                            }
+                        }
+                        ~ .form-check-label{
+                            color: color(300);
+                            font-size: 15px;
+                            font-weight: 500;
+                            padding-left: 32px;
+                            padding-top: 0px;
+                            &::before{
+                                width: 20px; height: 20px;
+                                border-color: #BBBBBB;
+                                border-radius: 3px;
+                                top: 2px;
+                            }
+                            &::after{
+                                left: 5px;
+                                top: 5px;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        textarea{
+            height: 125px;
+            border-radius: 0px;
+            &.form-control{
+                border-color: #CCCCCC;
+                &:focus{
+                    box-shadow: none;
+                    border-color: #CCCCCC;
+                }
+            }
+        }
+        .skipcheckBox{
+            margin-top: 20px;
+            .form-check{
+                margin-bottom: 0px;
+                &-input[type=checkbox]{
+                    width: 20px;
+                    height: 20px;
+                    &:checked{
+                        ~ .form-check-label{
+                            &::before{
+                                border-color: color(500);
+                            }
+                            &::after{
+                                left: 3px;
+                                top: 7px;
+                            }
+                        }
+                    }
+                    ~ .form-check-label{
+                        font-size: 15px;
+                        color: color(300);
+                        font-weight: 500;
+                        padding-top: 0px;
+                        &::after{
+                            top: 7px;
+                            left: 3px;
+                        }
+                        &::before{
+                            border-color: #BBBBBB;
+                            border-radius: 3px;
+                            top: 2px;
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                } 
+                
+            }
+        }
+    }
+    .facilitatesPrompt{
+        div{
+            width: 108px;
+        }
+        span{
+            font-size: 15px;
+            font-family: 400;
+            color: rgba(color(800), 0.7);
+        }
+        a{
+            width: 32px;
+            height: 34px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            em{
+                color: color(50);
+                font-size: 14px;
+            }
+        }
+        &_downBtn{
+            background-color: #F37F73;
+            &:hover{
+                background-color: darken(#F37F73, 7%);
+            }
+        }
+        &_upBtn{
+            background-color: #FF9F51;
+            transform: rotate(180deg);
+            &:hover{
+                background-color: darken(#FF9F51, 7%);
+            }
+        }
+        ul{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 18px;
+                }
+            }
+        }
+    }
+    .ratingBox{
+        &_list{
+            display: flex;
+            margin-bottom: 15px;
+            &question{
+                font-size: 16px;
+                font-weight: 400;
+                color: color(300);
+                width: 50%;
+                flex-shrink: 0;
+            }
+            &Head{
+                .column{
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: left;
+                    &-1{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        .column{
+        text-align: center;
+            &-2,&-3,&-4,&-5,&-6{
+                width: 112px;
+                padding: 12px 22px;
+            }
+          
+        }
+    }
+    .descriptionBox{
+        p{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        textarea{
+            min-height: 124px;
+            &.form-control{
+                &:focus{
+                    box-shadow: none;
+                    border-color: #dee2e6;
+                }
+            }
+        }
+    }
+    hr{
+        margin: 35px 0px;
+        border-color: #CCCCCC;
+    }
+    .rangeSlider{
+        ul{
+            margin-top: 34px;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            li{
+                width: calc(20% - 5px);
+                cursor: pointer;
+                &.active{
+                    p{
+                        color: color(500);
+                        font-weight: 600;
+                    }
+                    span{
+                        position: relative;
+                        &::after{
+                            content: "";
+                            width: 100%;
+                            height: 100%;
+                            background-color: color(500);
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                        }
+                        &::before{
+                            content: "";
+                            width: 0; 
+                            height: 0; 
+                            border-left: 14px solid transparent;
+                            border-right: 16px solid transparent;
+                            border-top: 14px solid color(500);
+                            position: absolute;
+                            top: -18px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+                &:not(:last-child){
+                    margin-right: 5px;
+                }
+                span{
+                    background-color: color(100);
+                    height: 10px;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: rgba(color(800), 0.7);
+                    margin-top: 15px;
+                    
+                }
+            }
+        }
+    }
+    @media(max-width: 1599px){
+        .commonBanner{
+            ul{
+                margin-bottom: 40px;
+                li{ font-size: 18px;
+                    &:not(:last-child){
+                        padding-right: 10px;margin-right: 10px;
+                        &::after{
+                            height: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(xxl) {
+        .commonBanner{
+            ul{
+                li{ font-size: 16px;}
+            }
+        }
+        .pageTitle {
+            margin-bottom: 20px;
+        }
+        .ratingBox {
+            .form-group label span{
+                font-size: 14px;
+            }
+        }
+        .answerBox{
+            &_head {
+                margin-bottom: 25px;
+                h3{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+            &_list{
+                    li{
+                        &:not(:last-child){
+                            margin-bottom: 25px;
+                        }
+                    }
+                &_ques{
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+            } 
+        }
+        hr{
+            margin: 25px 0px;
+        }
+    }
+
+    @media(max-width: 1399px) { 
+        .answerBox{
+            &_head{
+                margin-bottom: 15px;
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+            }
+            &_list{
+                &_ques{
+                    font-size: 16px;
+                }
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        hr{
+            margin: 15px 0px;
+        }
+        .rangeSlider{
+            ul{
+                margin-top: 25px;
+                li{
+                    &.active{
+                        span{
+                            &::before{
+                                border-left: 8px solid transparent;
+                                border-right: 8px solid transparent;
+                                border-top: 10px solid color(500);
+                                top: -14px;
+                            }
+                        }
+                    }
+                    span{
+                        height: 8px;
+                    }
+                    p{
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                }
+            } 
+        } 
+    }
+
+    @include media-breakpoint-down(xl) {
+       
+        .answerBox{
+            .skipcheckBox{
+                margin-top: 15px;
+                .form-check-input[type=checkbox]{
+                    ~ .form-check-label {
+                        padding-left: 26px;
+                        &::before{
+                            top: 5px;
+                        }
+                        &::after{
+                            top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+        .rangeSlider{
+            ul{
+                li{
+                    width: 120px;
+                }
+            }
+        }
+        .commonBanner{
+            padding: 25px 0px;
+            ul{
+                margin-bottom: 20px;
+            }
+            &_inner{
+                padding-top: 0px;
+            }
+        }
+        .ratingBox{
+            .column{
+                &-2, &-3, &-4, &-5, &-6{
+                    width: auto;
+                }
+            }
+            &_list{
+                &Head{
+                    .column{
+                        font-size: 16px;
+                    }
+                    .column-1{
+                        width: 100%;
+                    }
+                }
+                &question{
+                    width: 100%;
+                    font-size: 15px;
+                } 
+            }
+        }
+        .allOptions{
+            .form-check-input[type=radio]{
+                ~ .form-check-label {
+                    padding: 10px 10px 10px 40px;
+                    &::before{
+                        width: 18px;
+                        height: 18px;
+                        top: 12px;
+                        left: 15px;
+                    }
+                    &::after{
+                        width: 10px;
+                        height: 10px;
+                        top: 16px;
+                        left: 19px;
+                    }
+                }
+            } 
+        }
+       .form-check-input[type=radio],.form-check-input[type=checkbox]{
+        ~ .form-check-label {
+             font-size: 14px;
+        }
+       } 
+     
+
+  
+    .descriptionBox{
+        p{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+    .pageTitle {
+        margin-bottom: 15px;
+    }
+    .answerBox{
+        .skipcheckBox{
+            .form-check{
+                &-input[type=checkbox]{
+                    width: 18px;
+                    height: 18px;
+                    &:checked{
+                        ~ .form-check-label{
+                            &::after{
+                                top: 8px;
+                            }
+                        }
+                    }
+                    ~ .form-check-label{
+                        &::after{
+                            font-size: 8px;
+                            top: 8px;
+                        }
+                        &::before{
+                            width: 18px;
+                            height: 18px;
+                            top: 4px;
+                        }
+                    }
+                } 
+                
+            }
+        }
+    }
+    .facilitatesPrompt {
+        ul{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        div{
+            width: 90px;
+        }
+    }
+    }
+    @include media-breakpoint-down(lg) {
+        .commonBanner{
+            min-height: auto;
+            p{padding-bottom: 15px;}
+            &_report{
+                padding: 15px 5px 5px;
+                h3{font-size: 16px;}
+            }
+        }
+        .allOptions {
+            margin-bottom: 15px;
+                .form-check-input[type=radio]{
+                    ~ .form-check-label {
+                        &::before{
+                            top: 11px;
+                        }
+                        &::after{
+                            top: 15px;
+                        }
+                    }
+                } 
+            
+        }
+        .answerBox{
+            &_head{
+                p{
+                    font-size: 14px;
+                }
+            }
+            &_list{
+                &_ques{
+                    margin-bottom: 10px;
+                }
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            .form-check-input{
+                &[type=checkbox],&[type=radio]{
+                    ~ .form-check-label{
+                        font-size: 13px;
+                    }
+                }
+            } 
+        } 
+        hr{
+            margin: 15px 0px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .commonBanner{
+            // &_inner{
+            //     padding-right: 10px;
+            // }
+            
+            ul{
+                margin-bottom: 10px;
+                li{ 
+                    &:not(:last-child){
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .facilitatesPrompt {
+            ul{
+                li{
+                    &:not(:last-child){
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+        .answerBox{
+            .rangeSlider{
+                overflow-x: auto;
+                padding-bottom: 5px;
+                 ul{
+                    margin-top: 15px;
+                    margin-bottom: 5px !important;
+                    flex-wrap: nowrap;
+                row-gap: 10px;
+                    li{
+                        width: calc(140px - 5px);
+                        flex-shrink: 0;
+                        span,p {
+                            white-space: nowrap;
+                        }
+                     } 
+                 } 
+            }
+        }
+        .allOptions{
+            .form-group {
+                width: calc(80% - 8px);
+            }
+            .form-check-input[type=radio]{
+                ~ .form-check-label {
+                    padding: 10px 10px 10px 37px;
+                    &::after{
+                        left: 15px;
+                    }
+                    &::before{
+                        left: 11px;
+                    }
+                }
+            } 
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .participantLoader{
+            height: calc(100vh - 100px);
+        }
+        .answerBox{
+            .skipcheckBox{
+                .form-check-input{
+                    ~ .form-check-label {
+                        padding-top: 2px !important;
+                        
+                    }
+                }
+            }
+        }
+       
+        .commonBanner{
+            &_report{
+                width: 100%;
+            }
+            &_inner{
+                width: calc(100% - 0px);
+                padding-right: 0px;
+            }
+            ul{margin-bottom: 10px;
+                flex-wrap: wrap;
+                li{
+                    font-size: 14px;
+                }
+            }
+        }
+        .ratingBox{
+            .column {
+                width: 100% !important;
+                text-align: left !important;
+            }
+        }
+        .descriptionBox{
+            p{
+                font-size: 15px;
+            }
+        }
+        .allOptions{
+            .form-group {
+                width: calc(100% - 8px);
+            }
+        }
+        .answerBox{
+            .skipcheckBox{
+                .form-check{
+                    &-input[type=checkbox]{
+                        &:checked{
+                            ~ .form-check-label{
+                                &::after{
+                                    top: 5px;
+                                }
+                            }
+                        }
+                        ~ .form-check-label{
+                            &::after{
+                                top: 5px;
+                            }
+                            &::before{
+                                top: 1px;
+                            }
+                        }
+                    } 
+                    
+                }
+            }
+           
+        }
+    }
+    @media (max-width: 420px) {
+        .allOptions{
+            .form-group {
+                width: calc(100% - 0px);
+            }
+        }
+    }
+}
+
+foreignObject {
+    width: 100%;
+
+}
+/*take survey page end*/

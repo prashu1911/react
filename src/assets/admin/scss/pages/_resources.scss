@@ -1,0 +1,51 @@
+.resourcePage{
+    // range slider
+    .randomRange{
+        &_slider{appearance: none; height: 14px; 
+        outline: none;
+        &::-webkit-slider-thumb{
+            background-color: color(500); appearance: none;
+        }
+        &::-moz-range-thumb {
+            background-color: color(500);
+        }
+        }
+        &_text{
+        span{font-size: 12px; font-weight: 500;}
+        }
+    }
+}
+
+// resource page response block modal
+.responseBlockModal{
+    .scalarSec{
+        .maximum{
+            width: 10%;
+        }
+        .scalar{width: 40%;}
+        .title{
+            justify-content: center;
+            &:hover{color: color(800);}
+            em{font-size: 12px;}
+        }
+        .addeletebtn{width: auto;}
+    }
+    .RespCategory{
+        width: 180px;
+    }
+    .oeqTextarea{
+        width: calc(100% - 160px);
+        margin-bottom: 8px;
+    }
+    .addResponse{
+        overflow-x: auto;
+        .scalarappend{
+            min-width: 700px;
+        }
+    }
+    @include media-breakpoint-down(xl){
+        .oeqTextarea{
+            width: calc(100% - 112px);
+        }
+    }
+}

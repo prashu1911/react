@@ -1,0 +1,34 @@
+[
+    {
+        "id":"01",
+        "department-name": "Business Analysis",
+        "name": "Shivankita, C",
+        "user-name": "user909",
+        "email-id": "shivankita@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"02",
+        "department-name": "Business Development",
+        "name": "Zoloin, K",
+        "user-name": "user902",
+        "email-id": "zoloin@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"03",
+        "department-name": "Designing",
+        "name": "Junhai, K",
+        "user-name": "user903",
+        "email-id": "junhai@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"04",
+        "department-name": "React JS",
+        "name": "Shriti, C",
+        "user-name": "user907",
+        "email-id": "shriti@mailinator.com",
+        "assignment-date": "07/10/2024"
+    }
+]

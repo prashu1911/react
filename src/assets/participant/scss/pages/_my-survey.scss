@@ -1,0 +1,19 @@
+.mySurvey{
+    .cardSec{
+        position: relative;margin-top: -150px;padding-bottom: 60px;
+        @include media-breakpoint-down(xxl) {
+            margin-top: -125px;padding-bottom: 50px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin-top: -115px;padding-bottom: 30px;
+        }
+        @include media-breakpoint-down(md) {
+            .searchBar{
+                margin-top: 10px;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            margin-top: -140px;padding-bottom: 20px;
+        }
+    }
+}

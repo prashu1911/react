@@ -1,0 +1,182 @@
+.surveysPage{
+  @media (min-width: 1699px) {
+    .filter{
+        .searchBar {
+            width: 306px;
+        }
+    } 
+  }
+    @include media-breakpoint-down(xxl){
+      .filter{
+        &_action{
+        li{
+          .btn{
+            span{
+              display: none;
+            }
+            em{
+              margin-right: 0px;
+            }
+          }
+          &:nth-child(3){
+            a{
+              width: 40px;
+              height: 40px;
+              em{
+                font-size: 16px;
+              }
+            }
+          }
+        } 
+      } 
+      }
+    }
+    @media (max-width: 1399px) {
+      .searchBar {
+          width: 165px;
+      }
+      &.manageSurvey{
+        .companySelect{
+          .form-group{
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down(xl){
+      &.manageSurvey{
+        .companySelect{
+          .form-group{
+            margin-bottom: 15px;
+          }
+        }
+      }
+      .filter{
+        &_action{
+        li{
+            &:nth-child(3){
+              a{
+                width: 36px;
+                height: 36px;
+                em{
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down(lg){
+      .filter{
+        flex-wrap: wrap;
+        &_action{
+          width: 100%;
+          li{
+            &:nth-child(2){
+              width: calc(100% - 204px);
+            }
+            .searchBar{
+              width: 100%;
+            }
+          }
+        }
+      }
+      .commonTab{
+        width: 100%;
+      }
+    }
+    @include media-breakpoint-down(sm){
+      &.manageSurvey{
+        .pageTitle{
+          margin-bottom: 2px;
+        }
+        .companySelect{
+          width: 100%;
+        }
+      }
+     
+      .filter{
+        &_action{
+          flex-wrap: wrap;
+          li{
+            &:nth-child(2){
+              width: 100%;
+              order: 4;
+              margin-right: 0px;
+            }
+            .searchBar{
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+}
+
+.scheduleExit{
+  .assessmentBox{
+    background-color: #E9F1FA;
+    padding: 20px;
+    border-radius: 5px;
+    p{font-size: 14px;}
+  }
+}
+ /*manage survey end*/
+
+.buildModal{
+  .modal-dialog{min-width: 690px;}
+  .color-box, .default-box{
+    width: 20px; height: 20px; background-color: color(500);
+  }
+  .color-label{color: color(200); font-weight: 400;}
+  .btn-color{
+    height: 27px; font-size: 12px;padding: 4px 10px;
+    em{font-size: 10px;}
+    &::after{display: none;}
+  }
+  .dropdown{
+    &-menu{
+      padding: 10px;
+      li{display: inline-block; margin: 2px;}
+      .selectColor{
+        width: 20px; height: 20px;
+        display: inline-block; cursor: pointer;
+      }
+    }
+  }
+  .textArea{min-height: 100px;}
+  .noteText{font-size: 12px;}
+  @include media-breakpoint-down(lg){
+    .modal-dialog{min-width: inherit;}
+  }
+}
+
+// manage question
+.manageQuest{
+  .subText{font-size: 14px;}
+  .dropdown{
+    &-toggle{
+      &:after{display: none;}
+      em{font-size: 12px;}
+      &[aria-expanded="true"]{
+        em{transform: rotate(180deg);}
+      }
+    }
+    &-menu{
+      font-size: 14px;
+      box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+      border-color: #eff3f6;
+    }
+  }
+}
+
+.manageSurvey{
+  .pageTitle {margin-bottom: 14px;}
+  .companySelect{
+    width: 446px;
+    .form-group{
+      margin-bottom: 30px;
+    }
+  }
+}

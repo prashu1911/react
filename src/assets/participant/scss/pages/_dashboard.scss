@@ -1,0 +1,88 @@
+.dashboard{
+    .cardSec{
+        position: relative;margin-top: -95px;padding-bottom: 60px;
+        &_box{
+            background-color: color(50);border-radius: 10px;box-shadow: 3px 3px 40px rgba(color(900),0.05);
+            padding: 30px;
+            span{
+                font-size: 54px;font-weight: 500;line-height: 1.37;
+            }
+            p{font-size: 20px;color: color(300);margin-bottom: 0;}
+        }
+        &_title{
+            padding-top: 50px;margin-bottom: 23px;font-size: 24px;font-weight: 600;
+            color: color(800);
+        }
+        @media(max-width: 1599px){
+            &_box{
+                padding: 25px;
+                span{
+                    font-size: 48px;
+                }
+                p{font-size: 18px;}
+            }
+            &_title{
+                padding-top: 40px;margin-bottom: 20px;font-size: 22px;
+            }
+        }
+        @include media-breakpoint-down(xxl) {
+            margin-top: -65px;padding-bottom: 50px;
+            &_box{
+                padding: 20px;
+                span{
+                    font-size: 44px;line-height: 1.25;
+                }
+                p{font-size: 16px;}
+            }
+            &_title{
+                padding-top: 30px;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 30px;
+            &_box{
+                padding: 15px 10px;
+                span{
+                    font-size: 40px;
+                }
+                p{font-size: 14px;}
+            }
+            &_title{
+                padding-top: 25px;font-size: 20px;
+            }
+        }
+        @include media-breakpoint-down(md) {
+            .searchBar{
+                margin-top: 10px;
+            }
+            &_title{
+                padding-top: 20px;font-size: 18px;
+            }
+            &_box{
+                span{
+                    font-size: 36px;line-height: 1.1;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 25px;margin-top: 20px;
+            &_box{
+                span{
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .commonBanner {
+        @media (min-width: 1600px) {
+            padding-top: 65px;
+        }
+        @include media-breakpoint-down(sm) {
+            min-height: auto;
+            p{
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
+/*dashboard page end*/

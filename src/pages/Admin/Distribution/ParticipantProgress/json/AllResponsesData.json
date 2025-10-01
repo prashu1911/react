@@ -1,0 +1,58 @@
+[
+    {
+        "id":"01",
+        "department-name": "Business Analysis",
+        "name": "Shivankita, C",
+        "user-name": "user909",
+        "email-id": "shivankita@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"02",
+        "department-name": "Business Development",
+        "name": "Zoloin, K",
+        "user-name": "user902",
+        "email-id": "zoloin@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"03",
+        "department-name": "Designing",
+        "name": "Junhai, K",
+        "user-name": "user903",
+        "email-id": "junhai@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"04",
+        "department-name": "React JS",
+        "name": "Shriti, C",
+        "user-name": "user907",
+        "email-id": "shriti@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"05",
+        "department-name": "React JS",
+        "name": "Suveer, C",
+        "user-name": "user901",
+        "email-id": "suveer@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"06",
+        "department-name": "React JS",
+        "name": "Ogiwel, J",
+        "user-name": "user908",
+        "email-id": "ogiwel@mailinator.com",
+        "assignment-date": "07/10/2024"
+    },
+    {
+        "id":"07",
+        "department-name": "Designing",
+        "name": "Ogiwel, J",
+        "user-name": "user905",
+        "email-id": "ogiwel@mailinator.com",
+        "assignment-date": "07/10/2024"
+    }
+]

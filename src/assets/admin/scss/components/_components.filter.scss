@@ -1,0 +1,179 @@
+/*filter start*/
+.filter{
+    margin-bottom: 20px;
+    .searchBar{
+        position: relative;width: 360px;
+        input{
+            width:100%; background-color: color(100);height: 40px;padding-left: 50px;border-radius: 5px;
+            border:0;font-size: 14px;font-weight: 500;color:color(800);
+            &::placeholder{color:color(250);}
+            &:focus{box-shadow: none;}
+        }
+        &:before{
+            content:"\e918"; font-family: 'icomoon', sans-serif;color:color(250);font-size: 20px;left:18px;
+            @include absolutecenter(y);
+        }
+    }
+
+    &_action{
+        li{
+            &:not(:last-child){margin-right: 10px;}
+            .btn-icon{
+                width: 40px;height: 40px;font-size: 16px; background-color: color(100);color:color(300); @include flexcenter(both);
+                border-radius: 5px;border:0;
+                &:hover{background-color: #e6e6e6;};
+                .bold-icon {
+                    font-size: 1.2rem; /* optional */
+                    text-shadow: 0 0 0.5px currentColor; /* creates a slightly thicker effect */
+                  }
+            }
+            .btn{
+                em{font-size: 20px;margin-right: 5px;}
+            }
+        }
+    }
+
+    @media (max-width: 1699px) {
+        .searchBar {
+            width: 250px;
+        }
+    }
+    @include media-breakpoint-down(xxl) {
+        .searchBar {
+            width: 195px;
+        }
+    }
+    @media (max-width: 1399px) {
+        &_action{
+            li:not(:last-child) {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 15px;
+        .searchBar {
+           &::before{
+            font-size: 18px;
+            left: 12px;
+           }
+           input{
+            padding-left: 38px;
+            height: 36px;
+           }
+        }
+        &_action{
+            li{
+                .btn{
+                    &-icon{
+                        width: 36px;
+                        height: 36px;
+                    }
+                    em{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .searchBar {
+           width: 100%;
+         }
+    }
+}
+
+.advancefilter {
+    position: relative;
+
+    &::after{
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -19px;
+        right: 9%;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid color(100);
+    }
+    &_inner{
+        padding: 20px 20px 10px 20px;
+        background-color: color(100);
+        margin-bottom: 30px;
+    }
+    .form-group {
+        width: 30%;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        label{
+            font-weight: 500;
+        }
+    }
+
+    .btn_clumn {
+        margin-bottom: 10px;
+        flex-shrink: 0;
+    }
+    @include media-breakpoint-down(xxl) {
+        &::after{
+            right: 63px;
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        &_inner{
+            padding: 15px 15px 10px 15px;
+        }
+        &::after{
+            right: 46px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .filter_form{
+            flex-wrap: wrap;
+        }
+        .form-group {
+            width: calc(50% - 10px);
+        }
+        &_inner{
+            padding: 10px;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        &::after{
+            display: none;
+        }
+        .btn{
+            &_clumn{margin-bottom: 0;}
+        }
+        .form-group {
+            max-width: 100%;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+        }
+    }
+}
+
+.collpseFilter{
+    background-color: #FAFAFA; padding: 20px; padding-bottom: 5px; border-bottom: 1px solid #E1E1E2;
+    &_title{
+        cursor: pointer;
+        .toggleIcon{color: color(250); font-size: 15px; transition: all 0.3s ease;}
+        &[aria-expanded="true"]{
+            .toggleIcon{transform: rotate(180deg);}
+        }
+    }
+    .formCard{padding: 16px 0 0 !important;}
+    .setupToggle{justify-content: space-between;white-space: nowrap;
+      em{color: color(250); font-size: 10px;}
+      &[aria-expanded="true"]{
+        &.setupToggle{background-color: color(500) !important; border-color: color(500) !important; color: color(50) !important;}
+        em{transform: rotate(180deg); color: color(50);}
+      }
+    }
+}
+/*filter end*/

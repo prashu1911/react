@@ -1,0 +1,209 @@
+
+.faq {
+    .faqSec{
+        margin-top: -85px;padding-bottom: 100px;
+        &_box{
+            border-radius: 10px;box-shadow: 2px 2px 15px rgba(color(900),0.05);
+            padding: 40px;
+        }
+        .accordion{
+            &-item{
+                border: 0;
+                &:not(:last-child){margin-bottom: 20px;}
+            }
+            &-button{
+                padding: 22px 50px 22px 30px;font-size: 18px;font-weight: 500;box-shadow: none;
+                background-color: rgba(color(100),0.5);color: color(800);
+                border-top-left-radius: 10px !important;border-top-right-radius: 10px !important;
+                &.collapsed{
+                    border-radius: 10px !important;
+                    &::after{
+                        content: "\e901";
+                    }
+                }
+                &::after{
+                    position: absolute;top: 30px;right: 25px;  content: "\e902";font-family: 'icomoon', sans-serif;
+                    font-size: 24px;background: none;    transform: translateY(-50%);color: color(300);
+                }
+            }
+            &-body{
+                background-color: rgba(color(100),0.5);font-size: 14px;line-height: 2.1;
+                color: color(300);padding: 0 30px 25px 30px;border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+    @media(max-width: 1599px){
+        .faqSec { padding-bottom: 70px;}
+    }
+    @include media-breakpoint-down(xxl) {
+        .faqSec{
+            margin-top: -75px;padding-bottom: 60px;
+            &_box{
+                padding: 30px;
+            }
+            .accordion{
+                &-item{
+                    &:not(:last-child){margin-bottom: 15px;}
+                }
+                &-button{
+                    padding: 20px 45px 20px 20px;font-size: 16px;
+                    &::after{
+                        top: 28px;right: 20px; font-size: 21px;
+                    }
+                }
+                &-body{
+                    padding: 0 20px 20px 20px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        .faqSec{
+            padding-bottom: 50px;margin-top: -85px;
+            &_box{
+                padding: 20px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        .faqSec{
+            padding-bottom: 30px;margin-top: -70px;
+            &_box{
+                padding: 15px;
+            }
+            .accordion{
+                &-item{
+                    &:not(:last-child){margin-bottom: 10px;}
+                }
+                &-button{
+                    padding: 15px 40px 15px 15px;font-size: 15px;
+                    &::after{
+                        top: 24px;right: 15px; font-size: 18px;
+                    }
+                }
+                &-body{
+                    padding: 0 15px 15px 15px;line-height: 1.5;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .commonBanner {
+            min-height: 170px;
+        }
+        .faqSec {
+            margin-top: -60px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .commonBanner {
+            min-height: 145px;
+        }
+    }
+}
+
+.contactUs {
+    .faqSec{
+        margin-top: -85px;padding-bottom: 100px;
+        &_box{
+            border-radius: 10px;box-shadow: 2px 2px 15px rgba(color(900),0.05);
+            padding: 40px;
+        }
+        .accordion{
+            &-item{
+                border: 0;
+                &:not(:last-child){margin-bottom: 20px;}
+            }
+            &-button{
+                padding: 22px 50px 22px 30px;font-size: 18px;font-weight: 500;box-shadow: none;
+                background-color: rgba(color(100),0.5);color: color(800);
+                border-top-left-radius: 10px !important;border-top-right-radius: 10px !important;
+                &.collapsed{
+                    border-radius: 10px !important;
+                    &::after{
+                        content: "\e901";
+                    }
+                }
+                &::after{
+                    position: absolute;top: 30px;right: 25px;  content: "\e902";font-family: 'icomoon', sans-serif;
+                    font-size: 24px;background: none;    transform: translateY(-50%);color: color(300);
+                }
+            }
+            &-body{
+                background-color: rgba(color(100),0.5);font-size: 14px;line-height: 2.1;
+                color: color(300);padding: 0 30px 25px 30px;border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+    @media(max-width: 1599px){
+        .faqSec { padding-bottom: 70px;}
+    }
+    @include media-breakpoint-down(xxl) {
+        .faqSec{
+            margin-top: -75px;padding-bottom: 60px;
+            &_box{
+                padding: 30px;
+            }
+            .accordion{
+                &-item{
+                    &:not(:last-child){margin-bottom: 15px;}
+                }
+                &-button{
+                    padding: 20px 45px 20px 20px;font-size: 16px;
+                    &::after{
+                        top: 28px;right: 20px; font-size: 21px;
+                    }
+                }
+                &-body{
+                    padding: 0 20px 20px 20px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        .faqSec{
+            padding-bottom: 50px;margin-top: -85px;
+            &_box{
+                padding: 20px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        .faqSec{
+            padding-bottom: 30px;margin-top: -70px;
+            &_box{
+                padding: 15px;
+            }
+            .accordion{
+                &-item{
+                    &:not(:last-child){margin-bottom: 10px;}
+                }
+                &-button{
+                    padding: 15px 40px 15px 15px;font-size: 15px;
+                    &::after{
+                        top: 24px;right: 15px; font-size: 18px;
+                    }
+                }
+                &-body{
+                    padding: 0 15px 15px 15px;line-height: 1.5;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .commonBanner {
+            min-height: 170px;
+        }
+        .faqSec {
+            margin-top: -60px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .commonBanner {
+            min-height: 145px;
+        }
+    }
+}
+/*Faq page end*/

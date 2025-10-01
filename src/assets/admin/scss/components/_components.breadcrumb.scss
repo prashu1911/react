@@ -1,0 +1,17 @@
+.breadcrumb{
+    &-item{
+        font-size: 14px;color:color(250);font-weight: 500;position: relative;
+        &:not(:first-child){
+            padding-left: 24px;
+            &::before{
+                content:"\e916";font-family: icomoon, sans-serif !important; transform: rotateY(180deg);
+               left:8px; top: 4px; border-radius: 50%;padding-right: 0; font-size: 10px; position: absolute;
+            }
+        }
+        a{
+            color:color(250);
+            &:hover{color:color(500);}
+        }
+        &.active{color:color(500);}
+    }
+}

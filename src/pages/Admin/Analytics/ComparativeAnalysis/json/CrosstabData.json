@@ -1,0 +1,37 @@
+[
+    {
+        "id":"01",
+        "crosstab": "Which most closely describes your gender?",
+        "responses": "Man",
+        "count": "13",
+        "precentage": "17%"
+    },
+    {
+        "id":"02",
+        "crosstab": "",
+        "responses": "Woman",
+        "count": "9",
+        "precentage": "12%"
+    },
+    {
+        "id":"03",
+        "crosstab": "",
+        "responses": "Non-binary",
+        "count": "17",
+        "precentage": "23%"
+    },
+    {
+        "id":"04",
+        "crosstab": "",
+        "responses": "Gender Fluid",
+        "count": "17",
+        "precentage": "23%"
+    },
+    {
+        "id":"05",
+        "crosstab": "",
+        "responses": "Prefer not to say",
+        "count": "19",
+        "precentage": "25%"
+    }
+]

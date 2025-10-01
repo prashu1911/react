@@ -1,0 +1,39 @@
+.faqFilterModal{
+    .table {
+        thead{
+            tr{
+                th{
+                    &:nth-child(2){
+                        padding-right: 15px !important;
+                    }
+                }
+            }
+        }
+        .form-check-input[type=checkbox]{
+            &~ .form-check-label{
+                &:before{
+                    top: 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                &:after {
+                    left: 11px;
+                    top: 4px;
+                }
+            }
+            
+        }
+        .faqFilter{
+            width: 593px;
+            white-space: break-spaces;
+            &_Head{
+                color: color(250);
+                padding: 10px 15px;
+                background-color: color(100);
+            }
+            &_Para{
+                padding-top: 10px;
+            }
+        }
+    }
+}

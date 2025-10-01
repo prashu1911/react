@@ -1,0 +1,300 @@
+.ratingquestionPage{
+    .switchBtn{
+        label{
+            &::after{
+                content: "Off";
+            }
+        }
+        input{
+            &:checked{
+                + label:after{
+                    content: "On";
+                }
+            } 
+        }
+    } 
+    .tooltipText{
+        a{
+            font-size: 18px;
+            line-height: 1.5;
+            color: color(500);
+        }
+    }
+    .subTitle{
+        margin-bottom: 25px;
+        h3{
+            font-size: 16px;
+            line-height: 1.5;
+            color: color(800);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 1.5;
+            font-weight: 600;
+            color: color(800);
+            margin-bottom: 0px;
+        }
+    }
+    .form-label{
+        display: flex; align-items: center;
+        em{
+            color: #707070;
+            margin-left: 5px;
+        }
+    }
+    textarea{
+        min-height: 120px;
+    }
+    .responseBox{
+        margin-top: 10px;
+        position: relative;
+        padding-bottom: 70px;
+        .deleteBtn,.addBtn{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .addBtn{
+            background-color: #FF9F51;
+            color: color(50);
+            font-size: 30px;
+        }
+        .deleteBtn{
+            background-color: #F37F73;
+            em{
+                color: color(50);
+                font-size: 16px;
+            }
+        }
+        .form-check{
+            width: 19px;
+            height: 20px;
+            top: -5px;        
+        }
+        &_head{
+            .column{
+                &-1,&-2,&-3,&-4,&-5,&-6{
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: color(800);
+                    margin-bottom: 14px;
+                    font-weight: 500;
+                }
+                &-5{
+                    em{
+                        color: #707070;
+                    }
+                }
+            }
+        }
+        &_body{
+            margin-bottom: 10px;
+            .form-group{
+                margin-bottom: 0px;
+            }
+        }
+        .column{
+            &-1{
+                width: 100px;
+            }
+            &-2{
+                width: 38%;
+            }
+            &-3{
+                width: 22%;
+            }
+            &-4{
+                width: 22%;
+            }
+            &-5{
+                width: 60px;
+                text-align: center;
+            }
+            &-6{
+                width: 50px;
+                text-align: center;
+            }
+        }
+        .addresponseBlock{
+            margin-top: 10px;
+            position: absolute;
+            bottom: 0px;
+            width: 50%;
+            .form-check{
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        .addDescription{
+            margin-bottom: 10px;
+            textarea{
+                min-height: 80px;
+            }
+        }
+    }
+    .subjectBox{
+        margin-top: 25px;
+        &_title{
+            span{
+                font-size: 14px;
+                color: color(800);
+                font-weight: 500;
+                margin-bottom: 10px;
+                display: inline-block;
+            }
+            .form-group{
+                margin-bottom: 0px;
+            }
+        }
+        &_head{
+            margin-top: 20px;
+            .column{
+                &-1,&-2,&-3,&-4{
+                    font-size: 14px;
+                    line-height: 1.5;
+                    color: color(800);
+                    margin-bottom: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+        &_body{
+            margin-bottom: 10px;
+            .form-group{
+                margin-bottom: 0px;
+            }
+            .column-2{
+                .form-check{
+                    height: 35px;
+                }
+            }
+        }
+        .column{
+            &-1{
+                width: 115px;
+                flex-shrink: 0;
+            }
+            &-2,&-4{
+                width: 100px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+            &-3{
+                width: 78%;
+            }
+            &-4{
+                width: 100px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .subjectdeleteBtn,.subjectaddBtn{
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        .subjectaddBtn{
+            background-color: #FF9F51;
+            color: color(50);
+            font-size: 30px;
+        }
+        .subjectdeleteBtn{
+            background-color: #F37F73;
+            em{
+                color: color(50);
+                font-size: 16px;
+            }
+        }
+    }
+    .multiResponseBox{
+        margin-top: 25px;
+        border-top: 1px solid color(150);
+        padding-top: 25px;
+        &_title{
+            font-size: 14px;
+            color: color(800);
+            font-weight: 500;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    }
+
+    .form-check-input[type=checkbox]{
+        ~ .form-check-label{
+            line-height: 25px;
+        }
+    } 
+
+    .disabled-checkbox {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+    @include media-breakpoint-down(xxl){
+        .subTitle {
+            margin-bottom: 15px;
+        }
+    }
+    @include media-breakpoint-down(xl){
+        .responseBox{
+            .addBtn,.deleteBtn{
+                width: 36px; height: 36px;
+            }
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .responseBox{
+            overflow: auto;
+            white-space: nowrap;
+        }
+        .column{
+            &-1,&-2,&-3,&-4,&-5,&-6{
+               flex-shrink: 0;
+            }
+        }
+        .tooltipText{
+            a{
+                font-size: 16px;
+            }
+        } 
+       .subTitle{
+            h3 {
+                font-size: 15px;
+            }
+       }
+       .subjectBox{
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+       }
+    }
+    @include media-breakpoint-down(md){
+        .responseBox{
+            .column{
+                &-1{
+                    width: 50px;
+                }
+                &-2{
+                    width: 270px;
+                }
+                &-3,&-4{
+                    width: 155px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .tooltipText{
+            a{
+                font-size: 14px;
+            }
+        } 
+    }
+}

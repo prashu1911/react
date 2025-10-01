@@ -1,0 +1,114 @@
+/* common banner start */
+.commonBanner{
+    background-color: color(180);
+    min-height: 325px;
+    padding-top: 85px;
+    h1{
+        font-size: 60px;color: color(500);line-height: 1.33;
+        span{
+            font-weight: 600;
+        }
+    }
+    p{
+        font-size: 16px;line-height: 1.56;color: color(300);
+    }
+    @media(max-width: 1599px){
+        min-height: 300px;
+        padding-top: 60px;
+        h1{
+            font-size: 54px;
+        }
+    }
+    @include media-breakpoint-down(xxl) {
+        min-height: 250px;
+        padding-top: 50px;
+        h1{
+            font-size: 48px;line-height: 1.25;
+        }
+        p{font-size: 15px;}
+    }
+    @include media-breakpoint-down(xl) {
+        padding-top: 50px;
+        h1{
+            font-size: 44px;
+        }
+        p{font-size: 14px;line-height: 1.4;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        padding-top: 30px; min-height: 200px;
+        h1{
+            font-size: 40px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        padding-top: 25px;
+        h1{
+            font-size: 30px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        padding-top: 20px;
+        h1{
+            font-size: 22px;line-height: 1.1;margin-bottom: 10px;
+        }
+    }
+}
+
+.faqBanner{
+    background-color: color(180);
+    min-height: 230px;
+    padding-top: 10px;
+    h1{
+        font-size: 32px;color: color(500);line-height: 1.33;
+        span{
+            font-weight: 600;
+        }
+    }
+    p{
+        font-size: 16px;line-height: 1.56;color: color(300);
+    }
+    @media(max-width: 1599px){
+        min-height: 230px;
+    padding-top: 10px;
+        h1{
+            font-size: 32px;
+        }
+    }
+    @include media-breakpoint-down(xxl) {
+       min-height: 230px;
+    padding-top: 16px;
+        h1{
+            font-size: 32px;line-height: 1.25;
+        }
+        p{font-size: 15px;}
+    }
+    @include media-breakpoint-down(xl) {
+       padding-top: 16px;
+        h1{
+            font-size: 32px;
+        }
+        p{font-size: 14px;line-height: 1.4;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+         padding-top: 16px; min-height: 200px;
+        h1{
+            font-size: 32px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        padding-top: 16px;
+        h1{
+            font-size: 30px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        padding-top: 20px;
+        h1{
+            font-size: 22px;line-height: 1.1;margin-bottom: 10px;
+        }
+    }
+}
+
+/* common banner end */

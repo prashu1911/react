@@ -1,0 +1,150 @@
+// variables
+$height: 40px;
+$height-sm: 30px;
+$btn-color: color(900);
+$btn-light: #ececec;
+$btnColors: (
+  primary: (
+    clr: color(50),
+    bg: $primary,
+  ),
+  light: (
+    clr: color(250),
+    bg: #cdced0,
+  ),
+  secondary: (
+    clr: color(50),
+    bg: $secondary,
+  ),
+  dark: (
+    clr: color(50),
+    bg: $dark,
+  ),
+  warning: (
+    clr: color(50),
+    bg: $warning,
+  ),
+  success: (
+    clr: color(50),
+    bg: $success,
+  ),
+  danger: (
+    clr: color(50),
+    bg: $danger,
+  ),
+);
+/* button start */
+.btn {
+  height: $height;
+  @include flexcenter(both);
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 500;
+
+  @each $key, $clrValue in $btnColors {
+    // solid button
+    &-#{$key} {
+      @include button-variant(map-get($clrValue, clr), map-get($clrValue, bg), map-get($clrValue, bg));
+    }
+    // outline button
+    &-outline-#{$key} {
+      @include button-outline-variant(map-get($clrValue, bg), map-get($clrValue, clr), map-get($clrValue, bg));
+    }
+  }
+  &-icon {
+    color: color(50);
+    transition: all 0.3s;
+    font-size: 20px;
+    &.left {
+      margin-right: 12px;
+    }
+    &.customNext {
+      transform: rotate(180deg);
+    }
+    &.right {
+      margin-left: 12px;
+    }
+  }
+
+  &:hover {
+    em.right {
+      transform: rotate(180deg) translateX(5px);
+    }
+    em.left {
+      transform: translateX(-5px);
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    padding: 10px 15px;
+  }
+  @include media-breakpoint-down(xl) {
+    padding: 10px;
+    height: 36px;
+  }
+
+  &-sm {
+    height: $height-sm;
+    padding: 5px 10px;
+  }
+  &.questionPreviewBtn {
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-weight: 500;
+  }
+  &.questionPreviewBtn {
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 15px 40px;
+    font-weight: 500;
+  }
+  &.btn-light.questionPreviewBtn:hover {
+    color: #fff !important;
+  }
+}
+
+/* button end */
+
+/* ripple effect start */
+@keyframes ripple {
+  0% {
+    transform: scale(4);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40);
+  }
+}
+.ripple-effect-dark,
+.ripple-effect {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.ripple-effect span.ripple-overlay,
+.ripple-effect-dark span.ripple-overlay {
+  animation: ripple 0.9s;
+  border-radius: 100%;
+  background: color(50);
+  height: 12px;
+  position: absolute;
+  width: 12px;
+  line-height: 12px;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
+}
+.ripple-effect-dark span.ripple-overlay {
+  background: color(900);
+  opacity: 0.07;
+}
+/* ripple effect end */

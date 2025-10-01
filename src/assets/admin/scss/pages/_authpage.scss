@@ -1,0 +1,492 @@
+.authpage{
+    .authSec{
+        position: relative;
+        background-color: color(50);
+        .auth-bg{
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+            z-index: 0;
+        }
+        &_left{
+            width: 42.5%;
+            min-height: 100vh;
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0px 0px 87px 50px;
+            overflow: hidden;
+        }
+        &_logo{
+            img{
+                width: 281px;
+            }
+        }
+        &_right{
+            width: 57.5%;
+            height: 100%;
+            padding-top: 145px;
+            
+            h2{
+                font-size: 54px;
+                font-weight: 600;
+                margin: 110px 0px 20px 0px;
+                line-height: 1.2;
+            }
+            p{
+                font-size: 20px;
+                line-height: 1.5;
+                color: color(200);
+                margin-bottom: 44px;
+            }
+        }
+        &_cnt{
+            @keyframes h1Animation {
+                0% {
+                    transform: translateY(150px);
+                    opacity: 0;
+                    
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            @keyframes pAnimation {
+                0% {
+                    transform: translateY(300px);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                50% {
+                    transform: translateY(150px);
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            h1{
+                font-size: 63px;
+                font-weight: 600;
+                color: color(50);
+                margin: 15px 0px 29px 0px;
+                line-height: 1;
+                animation: linear 0.8s h1Animation;
+            }
+            p{
+                font-size: 26px;
+                line-height: 1.38;
+                color: rgba(color(50), 0.8);
+                animation: linear 1.8s pAnimation;
+            }
+        }
+        &_form{
+            width: 560px;
+            margin: 0 auto;
+            z-index: 1;
+            position: relative;
+            .form-group{
+                margin-bottom: 30px;
+                .form-control{
+                    height: 56px;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                ::-ms-input-placeholder { 
+                    color: color(200);
+                    font-size: 18px;
+                    font-weight: 500;
+                  }
+                  
+                  ::placeholder {
+                    color: color(200);
+                    font-size: 18px;
+                    font-weight: 500;
+                  }
+
+                .fieldicon{
+                    &-input{
+                        &-left{
+                            padding-inline-start: 59px;
+                        }
+                        &-right{
+                            padding-inline-end: 59px;
+                        }
+                    }
+                    &-left,&-right{
+                        top: 17px;
+                    }
+                    &-left{
+                        left: 21px;
+                        font-size: 22px;
+                    }
+                    &-right{
+                        right: 21px;
+                        font-size: 24px;
+                        color: color(200);
+                    }
+                }
+            }
+            form{
+                .btn{
+                    height: 64px;
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-top: 36px;
+                    .spinner-border{font-size: 10px;}
+                }
+            }
+        }
+        &_opt{
+            input{
+                border: none;
+                border-bottom: 2px solid #cdced0;
+                border-radius: 0px;
+                background-color: transparent;
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+            }
+        }
+        .signin{
+            margin-top: 35px;
+            span{
+                font-size: 20px;
+                color: color(200);
+            }
+            a{
+                color: color(500);
+            }
+        }
+        &_img{
+            width:100%;
+            img{
+                width: 100%; height: 100%;
+            }
+        }
+        .form-check-label{
+            &:hover{
+                a{
+                   opacity: 0.8;
+                }
+            }
+        }
+
+        .forgotpassword{
+            font-size: 18px;
+            font-weight: 500;
+            color: color(500);
+            padding-top: 7px;
+            margin-bottom: 38px;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+        .login_button{
+            background-color: #0968AC !important;
+        }
+        @media (min-width:1921px){
+            .authSec{
+                &_left,&_right{
+                    width: 50%;
+                }
+                &_form{
+                    width: 650px;
+                }
+                .auth-bg{
+                    width: 50%;
+                }
+            }
+
+
+        }
+        @media (max-width:1880px){
+            .auth-bg{
+                width: 57%;
+            }
+        }
+        @media (max-width:1699px){
+            &_left,&_right{
+                width: 50%;
+            }
+            &_img{
+                width: 450px;
+            }
+            &_right{
+                padding-top: 90px;
+                h2{
+                    font-size: 45px;
+                    margin: 60px 0px 20px 0px;
+                }
+            }
+            &_cnt{
+                h1{
+                    font-size: 50px;
+                    margin: 10px 0px 20px 0px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 1.4;
+                }
+            }
+            .auth-bg{
+                width: 50%;
+            }
+        }
+        @include media-breakpoint-down(xxl){
+            align-items: center;
+            .signin{
+                span{
+                    font-size: 18px;
+                }
+            }
+            &_cnt{
+                h1{
+                    font-size: 40px;
+                    margin: 10px 0px 15px 0px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+            }
+            &_right{
+                h2{
+                    font-size: 35px;
+                    margin: 40px 0px 10px 0px;
+                    line-height: 1;
+                }
+                p{
+                    font-size: 18px;
+                    line-height: 1.22;
+                    margin-bottom: 30px;
+                }
+            }
+            &_left{
+                padding: 35px;
+                height: 590px;
+            }
+            &_form{
+                width: 510px;
+                .form-group {
+                    margin-bottom: 20px;
+                }
+                form{
+                    .btn{
+                        height: 50px;
+                        font-size: 16px;
+                        margin-top: 25px;
+                    }
+                }
+            }
+            &_img{
+                width: 350px;
+                margin: 0 auto;
+            }
+            .forgotpassword{
+                margin-bottom: 15px;
+            }
+            .form-group{
+                margin-bottom: 20px;
+                .form-control{
+                    height: 50px;
+                    font-size: 16px;
+                }
+                ::-ms-input-placeholder { 
+                    font-size: 16px;
+                  }
+                  
+                  ::placeholder {
+                    font-size: 16px;
+                  }
+
+                .fieldicon{
+                    &-input{
+                        &-left{
+                            padding-inline-start: 45px;
+                        }
+                        &-right{
+                            padding-inline-end: 45px;
+                        }
+                    }
+                    &-left,&-right{
+                        top: 15px;
+                    }
+                    &-left{
+                        left: 14px;
+                        font-size: 20px;
+                    }
+                    &-right{
+                        right: 17px;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            &_logo{
+                img{
+                    width: 230px;
+                }
+            }
+        }
+        @include media-breakpoint-down(xl){
+            &_cnt{
+                h1{
+                    font-size: 25px;
+                    margin: 0px 0px 10px 0px;
+                }
+            }
+            &_left{
+                padding: 25px;
+            }
+            &_right{
+                padding: 50px 25px 25px;
+                h2{
+                    font-size: 25px;
+                    line-height: 1;
+                }
+                p{
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+            &_logo{
+                img{
+                    width: 200px;
+                }
+            }
+            .forgotpassword{
+                font-size: 16px;
+                padding-top: 0px;
+                margin-bottom: 10px;
+            }
+            .signin{
+                margin-top: 25px;
+                span{
+                    font-size: 16px;
+                }
+            }
+            &_form{
+                width: 100%;
+                form{
+                    .btn{
+                        height: 45px;
+                        margin-top: 20px;
+                    }
+                } 
+            }
+            .form-group{
+                margin-bottom: 15px;
+                .form-control{
+                    height: 45px;
+                    font-size: 14px;
+                }
+                ::-ms-input-placeholder { 
+                    font-size: 14px;
+                  }
+                  
+                  ::placeholder {
+                    font-size: 14px;
+                  }
+
+                .fieldicon{
+                    &-left,&-right {
+                        font-size: 18px;
+                        top: 13px;
+                    }
+                    
+                }
+                .fieldicon-input-left {
+                    padding-inline-start: 42px;
+                }
+                .fieldicon-input-right {
+                    padding-inline-end: 42px;
+                }
+            } 
+
+        }
+        @include media-breakpoint-down(lg){
+            min-height: 100vh;
+            &_logo{
+                img{
+                    width: 160px;
+                }
+            }
+            &_right{
+                width: 500px;
+                margin: auto;
+                padding: 40px 15px;
+            }
+            &_form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .auth-bg{
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+            }
+        }
+
+
+        @include media-breakpoint-down(md){
+            .auth{
+                &Sec{
+                    &_form{
+                        position: relative;
+                        z-index: 1;
+                    }
+                    
+                }
+                &-bg{
+                    z-index: 0;
+                    width: 100%;
+                }
+            }
+            &_right{
+                display: flex;
+                align-items: center;
+                background-color: color(50);
+                h2{
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin: 20px 0px 10px 0px;
+                }
+                p{
+                    font-size: 15px;
+                    line-height: 1.33;
+                }
+            }
+            .forgotpassword{
+                font-size: 15px;
+            }
+            .signin{
+                margin-top: 15px;
+                span{
+                    font-size: 15px;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm){
+            &_right{
+                width: 100%;
+                padding: 20px 10px;
+                height: 100vh;
+                
+            }
+            &_logo{
+                img {
+                    width: 130px;
+                }
+            } 
+        }
+    }
+}
+
+/*auth page end*/

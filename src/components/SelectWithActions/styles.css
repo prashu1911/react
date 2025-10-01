@@ -1,0 +1,89 @@
+.select-with-actions {
+  position: relative;
+}
+
+.select-container {
+  position: relative;
+}
+
+.select-field {
+  width: 100%;
+}
+
+/* Hide all default react-select indicators */
+.select-field .select__indicators {
+  display: none !important;
+}
+
+/* Hide the clear indicator that appears when items are selected */
+.select-field .select__clear-indicator {
+  display: none !important;
+}
+
+/* .css-1xc3v61-indicatorContainer{
+  display: none  !important;;
+} */
+/* Position our custom action buttons */
+.select-actions {
+  position: absolute;
+  right: 8px;
+  top: 16px;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+  background: transparent;
+  pointer-events: auto;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: color 0.2s ease;
+  opacity: 1;
+}
+
+.action-button:hover {
+  color: #333;
+}
+
+.action-button .icon-circle-check,
+.action-button .icon-close-circle {
+  font-size: 18px;
+}
+
+/* Ensure the select input doesn't overlap with the action buttons */
+.select-field .select__control {
+  padding-right: 80px !important;
+}
+
+/* Style for the selected values container */
+.select-field .select__value-container {
+  padding-right: 40px;
+}
+
+/* Ensure proper spacing for multi-select values */
+.select-field .select__multi-value {
+  margin: 2px;
+}
+
+/* Ensure the dropdown menu appears above our action buttons */
+.select-field .select__menu {
+  z-index: 3;
+}
+
+/* Ensure the control container has proper positioning */
+.select-field .select__control {
+  position: relative;
+  z-index: 1;
+}
+/* Hide any additional indicators that might appear */
+.select-field .select__indicator-separator {
+  display: none !important;
+}

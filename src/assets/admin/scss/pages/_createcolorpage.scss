@@ -1,0 +1,184 @@
+.createColorPage{
+    .label{
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: color(800);
+        font-weight: 500;
+        width: 100%;
+        display: inline-block;
+    }
+    .subHeading{
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: color(800);
+        font-weight: 500;
+        margin-bottom: 20px;
+        span{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: color(500);
+            color: color(50);
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+    }
+    .repeatBox{
+        margin-top: 25px;
+        padding-top: 25px;
+        border-top: 1px solid color(100);
+        &_pallate{
+            border:1px solid color(150);
+            background-color: color(50);
+            border-radius: 5px;
+            padding: 8px 15px;
+            caret-color: #0968AC;
+            cursor: text;
+            &.hide {
+                display: none;
+            }
+            span{
+                padding: 2px 8px;
+                display: inline-block;
+                font-size: 12px;
+                border-radius: 4px;
+                margin-right: 5px;
+            }
+            
+        }
+        .colorPalette{
+            height: 80px;
+            display: flex;
+            margin-top: 15px;
+           > div{
+             width: 11.2%;
+              .form-control{
+                &:focus{
+                    box-shadow: none;
+                }
+                &-color {
+                    border-radius: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0px;
+                    border: none;
+                    border-right: 1px solid color(50);
+                    -webkit-appearance: none;
+                    appearance: none;
+                    cursor: pointer;
+                    &::-webkit-color-swatch {
+                        border: none;
+                        border-radius: 0;
+                    }
+                    &::-moz-color-swatch {
+                        border: none;
+                        border-radius: 0;
+                    }
+                }
+                
+              }
+            }
+        }
+        .customSubHead{
+            span,p{
+                font-size: 16px;
+                color: color(800);
+                font-weight: 500;
+            }
+            p{
+                font-weight: 400;
+                margin-top: 8px;
+                color: color(300);
+            }
+        }
+    }
+    .resultPalette{
+        font-size: 16px;
+        color: color(800);
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        em{
+            margin-right: 8px;
+        }
+    }
+
+    @include media-breakpoint-down(xl) {
+        .subHeading{
+            margin-bottom: 15px;
+            span{
+                width: 20px;
+                height: 20px;
+                font-size: 14px;
+                line-height: 14px;
+            }
+        }
+        .repeatBox {
+            margin-top: 20px;
+            padding-top: 20px;
+            .customSubHead{
+                span,p{
+                    font-size: 14px;
+                }
+            } 
+        }
+        .resultPalette{
+            font-size: 14px;
+        }
+        
+    }
+    @include media-breakpoint-down(lg) {
+        .commonTab{
+            .nav-item{
+                margin-bottom: 0px;
+            }
+        }
+         .subHeading{
+            width: 100%;
+            font-size: 14px;
+            span{
+                width: 18px;
+                height: 18px;
+                font-size: 12px;
+                line-height: 12px;    
+            }
+         }
+         .repeatBox {
+            margin-top: 15px;
+            padding-top: 15px;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .repeatBox{
+            .colorPalette{
+                height: 50px;
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .commonTab{
+            &.nav{
+                padding-bottom: 5px;
+                margin-bottom: 0px;
+            }
+            .nav-link{
+                font-size: 12px;
+                height: 30px;
+                padding: 8px;
+            }
+        }
+        .subHeading,.resultPalette{
+            line-height: 18px;
+        }
+         
+    }
+}
+
+

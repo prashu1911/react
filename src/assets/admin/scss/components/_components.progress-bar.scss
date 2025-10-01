@@ -1,0 +1,21 @@
+.progress {
+    border-radius: 10px;
+    background-color: #DEFADD;
+    height: 15px;
+    &-bar {
+        border-radius: 10px;
+        height:15px;
+        background-color:#7DEB79;
+        color: color(800);
+        font-size: 10px;
+         text-align: right;
+         padding-right: 8px;
+    }
+}
+.progressLabel{
+    font-size: 14px; margin-bottom: 10px;
+    color: color(800); display: flex; align-items: center; justify-content: space-between;
+    @include media-breakpoint-down(lg) {
+        margin-bottom: 6px;
+    }
+}

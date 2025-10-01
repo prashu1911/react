@@ -1,0 +1,38 @@
+.benchmarkModal {
+    .modal-dialog{
+        max-width: 1490px;
+    }
+    .w-200{width: 200px; min-width: 200px;}
+    .w-500{width: 500px; min-width: 500px;}
+    .w-160{width: 160px; min-width: 160px;}
+    @include media-breakpoint-down(xxl){
+        .modal-dialog{
+            max-width: 1200px;
+        }
+    }
+    @media (max-width: 1299px) {
+        .modal-dialog{
+            max-width: 1000px;
+        }
+    }
+    @include media-breakpoint-down(xl){
+        .modal-dialog{
+            max-width: 900px;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .modal-dialog{
+            max-width: 700px;
+        }
+    }
+    @include media-breakpoint-down(md){
+        .modal-dialog{
+            max-width: 500px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .modal-dialog{
+            max-width: initial;
+        }
+    }
+}

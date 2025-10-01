@@ -1,0 +1,566 @@
+
+.dashboard{
+    
+    .staticBox{
+        margin-top: 70px; gap: 10px;
+        &_inner{
+            display: flex;flex:  0 0 30%;
+        }
+        &_icon{
+            width: 40px; height: 40px; font-size: 18px; display: flex;
+            align-items: center;justify-content: center; flex-shrink: 0; border-radius: 5px;
+            &.icon-primary{color: #0968AC; background-color: rgba(#0968AC, 0.2);}
+            &.icon-warning{color: #FCB92C; background-color: rgba(#FCB92C, 0.2);}
+            &.icon-danger{color: #F37F73; background-color: rgba(#F37F73, 0.2);}
+        }
+        &_caption{
+            margin-left: 10px;
+            p{color:color(250);font-size: 13px;margin: 2px 0  0; line-height: 1.2; }
+            span{
+                font-size: 18px;font-weight: 600;line-height: 1;
+                sub{bottom: 0;}
+            }
+        }
+        &_head{
+            margin-bottom: 20px;
+            a{
+                font-size: 14px;font-weight: 600;color: color(500);
+                &:hover{
+                    color:darken(color(500),10%)!important;
+                }
+                em{
+                    margin-left: 5px;
+                    transform: rotate(180deg);
+                    display: inline-block;
+                    font-size: 10px;
+                }
+            }
+        }
+        &_bottom{
+            margin-bottom: 9px;
+            p{
+                font-size: 12px;line-height: 18px;color: color(300);
+            }
+            span{
+                font-size: 13px;font-weight: 500;color: color(300);
+            }
+        }
+        .progress{
+            height: 10px;background-color: color(100);border-radius: 30px;
+            &-bar{
+                border-radius: 30px;height: 10px;
+            }
+        }
+        &:not(:last-child){
+            margin-bottom: 9px;
+        }
+
+    }
+    .cardBox{
+        padding: 20px;
+        &_graph{
+            height: auto; max-height: 340px;
+            .chartName{
+                font-size: 14px; color: color(250); 
+                text-align: center; position: absolute;
+                top: calc(100% - 26px); left: 50%; transform: translateX(-50%);
+            }
+        }
+        .subscription{
+            &_details{
+                margin-bottom: 20px;
+                span{font-size: 14px; color: color(800); font-weight: 500; margin-bottom: 4px;}
+                p{font-size: 15px; color: color(250); margin: 0;}
+            }
+            &_progress{
+                .label{font-size: 15px; color: color(250); margin-bottom: 6px;}
+                p{font-size: 13px; color: color(250); margin: 14px 0 50px;}
+                .progress{
+                    background-color: #EEEFF0;height:12px;
+                    &-bar{
+                        background-color: color(500) !important;
+                        height: 12px;
+                    }
+                }
+            }
+            .btn{
+                &-danger{
+                    background-color: #FFE0DB; color: #F37F73; border-color: #FFE0DB;
+                    &:hover, &:active, &:focus, &.focus, &.active, &.show, 
+                    &:focus-visible, &:first-child:hover, &:first-child:active,
+                    &:not(.btn-check) + &:hover, &-check:checked + &, &-check:focus-visible + &,
+                    &:not(.btn-check) + &:active{
+                        background: darken(#FFE0DB, 2) !important;
+                        border-color: #FFE0DB !important;
+                        color: #F37F73 !important;
+                    }
+                }
+            }
+        }
+    }
+    .browserTab{
+        &.nav-pills{
+            padding-bottom: 5px; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden;
+            .show>.nav-link, .nav-link.active{
+                background-color: color(500);
+                color: color(50);font-weight: 600;
+            }
+            .nav-link{
+                padding: 10px 20px;
+                color: color(250);
+                font-weight: 500;
+                height: 40px;
+            }
+            .nav-item{flex-shrink: 0;}
+        }
+        
+    }
+    .browserTable{
+        &.table>:not(caption)>*>*{
+            padding: 0;
+            color: inherit;
+            background-color: inherit;
+            border-bottom: 0;
+        }
+        thead th{
+            font-size: 14px; color: color(800) !important; font-weight: 500;
+            padding: 0 14px 10px !important; border-bottom: 0; white-space: nowrap;
+            &:first-child{
+                padding-left: 0 !important;
+            }
+            &:last-child{
+                padding-right: 0 !important;
+            }
+        }
+        tbody{
+            vertical-align: middle;
+            td{font-size: 15px; color: color(250) !important;padding: 14px !important;
+            &:first-child{
+                padding-left: 0 !important;
+            }
+            &:last-child{
+                padding-right: 0 !important;
+            }
+            }
+        }
+        .logo{
+            height: 26px;
+            width: 26px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .progress{
+            height: 10px; background-color: #EEEFF0;
+            width: 130px;
+            &-bar{
+                height: 10px;
+            }
+        }
+    }
+    .legend{
+        margin-top: 30px;
+        font-size: 15px; color: color(250);
+        li:not(:last-child){
+            margin-bottom: 12px;
+        }
+        .colorBox{
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-right: 24px;
+        }
+    }
+    &_offcanvas{
+        position: fixed;
+        top: 50%;
+        right: 0;
+        button{
+            padding: 10px;
+            font-size: 20px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    //apex chart
+    .apexcharts-tooltip {
+        color: #000 !important; border-radius:0 !important;
+    }
+    .apexcharts-tooltip-series-group{background:#fff !important;}
+    .barChart{
+        overflow-x: auto;
+        overflow-y: hidden;
+        &_inner{
+            min-width: 340px;
+            &.xl{
+                min-width: 500px;
+            }
+        }
+    }
+    
+    @media (max-width:1799px){
+        .cardBox{
+            &_result{
+                &_box{
+                    padding: 5px 10px;
+                    span{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+
+
+    }
+    @media (min-width:1699px){
+        .filter{
+            &_action{
+                .searchBar{
+                    width: 260px;
+                }
+            }
+        }
+    }
+    @media (max-width:1699px){
+        .browserTable{
+            tbody td{padding: 8px 14px !important;}
+        }
+        .legend{
+            margin-top: 0;
+            position: relative;
+            top: calc(100% - 520px);
+        }
+        .staticBox{
+            margin-top: 50px;
+            &_head{
+                margin-bottom: 10px;
+                flex-wrap: wrap;
+                img{
+                    width: 50px; height: auto;
+                }
+               > div{
+                margin-bottom: 5px;
+               }
+            }
+            &_caption {
+                margin-left: 10px;
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+        .cardBox{
+            &_btn{
+                flex-wrap: wrap;
+            }
+        }
+    }
+    @include media-breakpoint-down(xxl){
+        .filter{
+            &_action{
+                .searchBar{
+                    width: 165px;
+                }
+            }
+        }
+        .cardBox{
+            &_time{
+                flex-direction: column;
+                justify-content: flex-end !important;
+                align-items: flex-start !important;
+                p{
+                    padding-bottom: 5px;
+                }
+                &_count{
+                    margin-left: 0px;
+                    &_box{
+                        span{font-size: 16px;}
+                    }
+                }
+            }
+            &_result{
+                flex-direction: column;
+                &_box{
+                    width: 100%;
+                    max-width: 100%;
+                    span{
+                        font-size: 30px;
+                    }
+                }
+            }
+            .subscription{
+                &_details{margin-bottom: 15px;}
+                &_progress{
+                    p{margin: 14px 0 30px;}
+                }
+            }
+        }
+        .browserTab{
+            &.nav-pills{
+                .nav-link{
+                    padding:10px;
+                }
+            }
+            
+        }
+        .legend{
+            top: calc(100% - 480px);
+            li:not(:last-child){
+                margin-bottom: 10px;
+            }
+            .colorBox{margin-right: 20px;}
+        }
+    }
+    @include media-breakpoint-down(xl){
+        .staticBox{
+            .progress {
+                height: 6px;
+            }  
+            &_caption{
+                p{
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
+                span{
+                    font-size: 18px;
+                }
+            }          
+        }
+        .browserTab{
+            &.nav-pills{
+                .nav-link{
+                    padding: 8px 10px;
+                    height: 36px;
+                    font-size: 13px;
+                }
+            }
+            
+        }
+        .legend{
+            font-size: 14px;
+            li:not(:last-child){
+                margin-bottom: 5px;
+            }
+            .colorBox{
+                width: 12px;
+                height: 12px;
+                margin-right: 10px;
+            }
+        }
+        .cardBox{
+            .subscription{
+                &_progress{
+                    p{margin: 14px 0 20px;}
+                }
+            }
+        }
+
+    }
+    @include media-breakpoint-down(lg){
+        .filter{
+            .searchBar{
+                width: 100%;
+            }
+            &_action{
+                width: 100%;
+                li{
+                    &:first-child{
+                        width: calc(100% - 257px);
+                    }
+                    
+                }
+            }
+        }
+        .cardBox{
+            .combimeBtn{
+                flex-wrap: wrap;
+                .btn{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md){
+        .staticBox{
+            &_head{
+                img {
+                    width: 40px;
+                }
+            } 
+        }
+        .cardBox{
+            .subscription{
+                &_details{margin-bottom: 10px;}
+                &_progress{
+                    p{margin: 15px 0;}
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .filter{
+          &_action{
+            flex-wrap: wrap;
+            li{
+              &:nth-child(1){
+                width: 100%;
+                order: 4;
+                margin-right: 0px;
+              }
+              
+            }
+          }
+        }
+        .legend{
+            margin-top: 20px;
+            position: inherit;
+        }
+    }
+}
+
+//offcanvas
+.dashboardCanvas{
+    max-width: 300px;
+    z-index: 3;
+    .offcanvas{
+        &-body{
+            padding: 0;
+            overflow: inherit;
+        }
+    }
+    &_cnt{
+        height: 100vh;
+        padding: 105px 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .closeBtn{
+        position: absolute;
+        top: 50%;
+        left: -38px;
+        button{
+            padding: 8px;
+            font-size: 20px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+    .chartTitle{
+        font-size: 16px;
+        font-weight: 600;
+        color: color(800);
+    }
+    .chartCards{
+        margin-bottom: 24px;
+        &_inner{
+            width: 80px;
+            height: 80px;
+            background-color: color(100);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &.active{
+                border: 1px solid #0968ac82;
+            }; &:hover{
+                background: #0968ac29;
+                border: 1px solid #0968ac82;
+            }
+        }
+        .chartName{font-size: 12px; color: color(800); font-weight: 600;display: block;}
+    }
+    @include media-breakpoint-down(xxl){
+        &_cnt{
+            padding: 90px 15px;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        &_cnt{
+            padding: 80px 10px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        max-width: 270px;
+    }
+}
+.offcanvas-backdrop{z-index: 3;}
+
+.apexcharts-tooltip {
+    border-radius: 0 !important;
+    overflow: visible !important;
+    border: 0 !important;
+  }
+  .custom-tooltip{
+    padding: 3px 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: color(300);
+    font-weight: 600;
+    font-size: 12px;
+    position: relative;
+    margin-top: -30px;
+    margin-left: -15px;
+    box-shadow: rgba(#000000, 0.14) 2px 2px 6px 0px;
+  }
+  div:first-child
+  .custom-tooltip:after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+.surveyScore-xaxis-label{
+    transform: translate(-38% , 0);
+}
+.companyDetails-xaxis-title{
+    transform: translate(-45% , 0);
+}
+
+// survey Status Chart inner design
+.surveyStatusChart{
+    position: relative;
+    margin-top: 80px;
+    z-index: 1;
+    canvas {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before{
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 175px;
+        height: 175px;
+        background-image: url(#{$imageurl}/survey-status-chart-inner.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 175px;
+        z-index: 0;
+        pointer-events: none;
+        
+    }
+    @include media-breakpoint-down(xxl){
+        margin-top: 50px;
+    }
+    @include media-breakpoint-down(xl){
+        margin-top: 80px;
+    }
+    @include media-breakpoint-down(sm){
+        margin-top: 0;
+    }
+}
+.active-chart-type {
+  background-color: #0968AC !important;
+  color: #fff !important;
+  font-weight: 600;
+}
+/*dashboard end*/

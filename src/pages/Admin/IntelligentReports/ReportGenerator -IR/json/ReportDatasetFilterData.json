@@ -1,0 +1,13 @@
+
+[
+    {
+        "number":"01",
+        "dataPoint": "Department",
+        "filter": "All"
+    },
+    {
+        "number":"02",
+        "dataPoint": "Participant",
+        "filter": "Multiple Smith, James Carter, Olivia Turner, Daniel Walker"
+    }
+]

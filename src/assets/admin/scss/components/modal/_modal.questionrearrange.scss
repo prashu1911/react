@@ -1,0 +1,199 @@
+.questionRearrangeModal {
+    max-width: 1318px;
+    @include media-breakpoint-down(xxl){
+        padding: 12px;
+    }
+    @include media-breakpoint-down(sm){
+        padding: 0px;
+    }
+
+
+    .accordion{
+        > div{
+            margin-bottom: 10px;
+        }
+        &-item{
+            border: none;
+            &:last-of-type>.accordion-header{
+                .accordion-button{
+                        border-radius: 0px;
+                        box-shadow: none;
+                    &.collapsed{
+                        border: none;
+                        border-radius: 0px;
+                    }
+
+                }
+            } 
+        }
+        &-button{
+            padding: 13px 45px 13px 20px;
+            background-color: #f3f3f3;
+            width: 100%;
+            cursor: move;
+            &:focus{
+                box-shadow: none;
+            }
+            &::after{
+                display: none;
+            }
+            &.collapsed{
+                .modalAccordion_actionBtn{
+                    transform: translateY(-50%) rotate(0deg);
+                }
+            }
+        }
+        &-body{
+            padding: 0px;
+        }
+    }
+}
+
+
+.modalAccordion{
+    &_actionBtn{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        display: flex;
+    }
+    &_Head{
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+        &-blue{
+            color: #5EC5EA;
+        }
+        &-pink{
+           color: #F980BF;
+        }
+        &-red{
+            color: #F77C6F;
+        }
+    }
+    &_inner{
+        padding: 20px;
+        .commonQuestion{
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 0px;
+            color: color(800);
+            font-weight: 400;
+            em{
+                color: #CDCED0;
+                margin-right: 18px;
+                font-size: 16px;
+            }
+        }
+        ul{
+            li{
+                &:not(:last-child){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    button{
+        padding: 13px 45px 13px 20px;
+        background-color: #F3F3F3;
+        border-radius: 0px;
+        border: none;
+        width: 100%;
+        &.btn-primary{
+            &:hover,&:focus,&:active,&:focus-visible{
+                background-color: #F3F3F3 !important;
+            }
+        }
+       
+        em{
+            font-size: 16px;
+            margin-right: 18px;
+            color: color(150);
+        }
+    }
+    @include media-breakpoint-down(xxl){
+        .accordion{
+            &-button{
+                padding: 10px 35px 10px 15px;
+            }
+        }
+        &_actionBtn{
+            right: 15px;
+            em{
+                font-size: 12px !important;
+            }
+        }
+        &_Head{
+            font-size: 18px;
+        }
+        button{
+            padding: 10px 35px 10px 15px;
+        }
+        &_inner{
+            padding: 15px;
+            .commonQuestion{
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+    }
+    @include media-breakpoint-down(xl){
+        button{
+            em{
+                margin-right: 12px;
+            }
+        }
+        &_Head{
+            font-size: 16px;
+        }
+        &_inner{
+            .commonQuestion{
+                &:not(:last-child){
+                    margin-bottom: 10px;
+                }
+            }
+            p{
+                font-size: 16px;
+                em{
+                    margin-right: 12px;
+                    font-size: 14px;
+                }
+            }
+            
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .accordion{
+            &-button{
+                padding: 10px 25px 10px 10px;
+            }
+        }
+        &_actionBtn{
+            right: 10px;
+        }
+        button{
+            padding: 10px 25px 10px 10px;
+            em{
+                font-size: 14px;
+            }
+        }
+        &_inner{
+            padding: 10px;
+            p{
+                font-size: 14px;
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,141 @@
+$select-main-color:color(150);
+$select-border-color:color(150);
+$select-arrow:"\e90a";
+$choice-color:#95A09B;
+$icon-color: color(250);
+$placholder-color:rgba(color(250), 0.5);
+
+
+.selectPicker{
+  .css-13cymwt-control{
+    border-color: $select-border-color;
+    border-radius: 5px;
+    &:hover{
+      border-color: $select-border-color;
+    }
+  }
+  .css-13cymwt-control, .css-t3ipsp-control{min-height: 40px;}
+  .css-t3ipsp-control{
+    border-color: color(500);
+    box-shadow: none;
+    &:hover{
+      border-color: color(500);
+    }
+  }
+  .css-1jqq78o-placeholder{
+    color: $placholder-color!important;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .css-1dimb5e-singleValue{
+    font-size: 12px;
+    font-weight: 500;
+    color: color(800);
+  }
+  .css-1u9des2-indicatorSeparator,.css-894a34-indicatorSeparator{
+    display: none;
+  }
+  .css-hlgwow{
+    padding: 0px 15px 0px 15px;
+  }
+  .css-19bb58m{
+    margin: 0px;
+    padding: 0px;
+  }
+  .css-1xc3v61-indicatorContainer,.css-15lsz6c-indicatorContainer{
+    position: relative;
+    padding: 0px;
+    &::after{
+      position: absolute;
+      content: "\e90a";
+      font-family: icomoon, sans-serif;
+      font-size: 10px;
+      display: inline-block;
+      color: color(250);
+      top: -6px;
+      right: 0px;
+    }
+    svg{
+      display: none;
+    }
+  }
+  .css-1wy0on6{
+    padding-right: 15px;
+  }
+  .css-v7duua{
+    position: relative;
+    padding: 0px 15px 0px 0px;
+    &::after{
+      position: absolute;
+      content: "🗙";
+      font-family: icomoon, sans-serif;
+      font-size: 10px;
+      display: inline-block;
+      color: color(250);
+      top: 1px;
+      right: 1px;
+    }
+    &:hover{
+      background-color: transparent;
+    }
+    svg{
+      display: none;
+    }
+  }
+  .css-9jq23d{
+   padding: 0px;
+   margin: 0px;
+   font-size: 12px;
+    font-weight: 500;
+    color: color(800);
+  }
+  .css-1p3m7a8-multiValue{
+    background-color: color(100);
+    border-color: transparent;
+    padding: 2px 5px 2px 5px;
+    margin: 3px 3px 3px 0px;
+  }
+  .css-1dyz3mf{padding-right: 75px;}
+  .css-1xc3v61, .css-15lsz6c{
+    &-indicatorContainer{
+      height: 100%;
+      &::after{top: 12px;}
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    .css-13cymwt-control, .css-t3ipsp-control{min-height: 36px;}
+  }
+}
+.css-1nmdiq5-menu{
+  font-size: 12px;
+  margin-top: 4px;
+  overflow: hidden;
+  z-index: 999 !important;
+  .css-qr46ko{
+    padding: 0px;
+    .css-d7l1ni-option,.css-tr4s17-option{
+      background-color: color(500);
+      color: color(50);
+    }
+  }
+}
+.selectIcon{
+  .select2.select2-container .select2-selection--multiple{padding-right: 75px;}
+  .rightIcons{
+    position: absolute;
+    top: 9px;
+    right: 35px;
+    z-index: 1;
+    font-size: 19px;
+    em{color: color(150); transition: all 0.3s ease; cursor: pointer;
+      &:hover{color: darken(color(150), 5);}
+    }
+  }
+  @include media-breakpoint-down(xl){
+    .rightIcons{top: 6px;}
+  }
+}

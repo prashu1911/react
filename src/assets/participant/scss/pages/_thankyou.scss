@@ -1,0 +1,13 @@
+.thankyouPage{
+    height: calc(100vh - 154px);
+    &_title{
+        font-size: 80px;
+        color: color(500);
+        font-family: font(md);
+    }
+    p{
+        color: color(900);
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}

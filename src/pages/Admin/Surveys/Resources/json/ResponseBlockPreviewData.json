@@ -1,0 +1,37 @@
+[
+    {
+        "response":"Strongly disagree",
+        "weightage": "1.00",
+        "responseCategory": "Positive",
+        "oqe": "No",
+        "oqeQuestion": "-"
+    },
+    {
+        "response":"Disagree",
+        "weightage": "2.00",
+        "responseCategory": "Positive",
+        "oqe": "No",
+        "oqeQuestion": "-"
+    },
+    {
+        "response":"Neutral",
+        "weightage": "3.00",
+        "responseCategory": "Positive",
+        "oqe": "No",
+        "oqeQuestion": "-"
+    },
+    {
+        "response":"Agree",
+        "weightage": "4.00",
+        "responseCategory": "Positive",
+        "oqe": "No",
+        "oqeQuestion": "-"
+    },
+    {
+        "response":"Strongly agree",
+        "weightage": "5.00",
+        "responseCategory": "Positive",
+        "oqe": "No",
+        "oqeQuestion": "-"
+    }
+]

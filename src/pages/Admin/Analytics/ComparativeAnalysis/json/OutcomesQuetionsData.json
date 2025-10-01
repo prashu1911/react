@@ -1,0 +1,32 @@
+[
+    {
+        "number01":"01",
+        "outcomes": "Operational Efficiency",
+        "number02": "1",
+        "questions": "Identify which metrics are most relevant to measuring efficiency"
+    },
+    {
+        "number01":"02",
+        "outcomes": "Operational Efficiency",
+        "number02": "2",
+        "questions": "we experience operational disruptions or delays?"
+    },
+    {
+        "number01":"03",
+        "outcomes": "Operational Efficiency",
+        "number02": "3",
+        "questions": "Quantify the financial impact of inefficiencies, such as wasted resources or increased operational costs."
+    },
+    {
+        "number01":"04",
+        "outcomes": "Operational Efficiency",
+        "number02": "4.1",
+        "questions": "Are our current processes streamlined and standardized?::Evaluate whether processes are optimized and consistently applied."
+    },
+    {
+        "number01":"05",
+        "outcomes": "Operational Efficiency",
+        "number02": "4.2",
+        "questions": "Are our current processes streamlined and standardized?::Assess whether resources are allocated and used efficiently."
+    }
+]

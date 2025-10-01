@@ -1,0 +1,352 @@
+ .myUsage {
+    .card {
+        border-radius: 0; border: none;
+        color: color(800); padding: 30px; 
+        &.p-20 {
+            padding: 20px;
+        }
+        .profileImg {
+            border: 1px solid color(100);
+            width: 84px; height: 84px;
+            border-radius: 100%;
+            overflow: hidden;
+            padding: 5px;
+            margin-right: 13px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 100%; height: 100%; object-fit: cover;
+            }
+            em {
+                width: 100%; height: 100%; border-radius: 100%;
+                font-size: 34px; background-color: #E9F1FA; color: color(500);
+                display: flex; align-items: center; justify-content: center;
+            }
+        }
+        &_leftbox {
+            width: 40%;
+            flex: 0 0 40%;
+            display: flex;
+            align-items: start;
+            h2 {
+                font-weight: 600;
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 16px; font-weight: 500;
+                color: rgba(color(800), 0.5);
+                margin-bottom: 22px;
+            }
+            ul {
+                list-style: none; padding-left: 0; margin-bottom: 0; 
+                display: flex; align-items: center;
+                li {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    &:not(:last-child) {
+                        padding-right: 15px; margin-right: 15px;
+                        border-right: 2px solid #E9F1FA;
+                    }
+                }
+            }
+        }
+        &_rightbox {
+            width: 60%;
+            flex: 0 0 60%;
+            .info{
+                h4{ font-size: 24px;
+                    a{
+                        color: rgba(#0F172A,0.2);display: inline-block;margin-left: 7px;
+                        &:hover{
+                            color: color(500);
+                        }
+                        em{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+            ul {
+                display: flex; flex-wrap: wrap;
+                list-style: none; padding-left: 0;
+                margin-bottom: 0; row-gap: 25px;
+                li {
+                    width: 33.33%;
+                    p {
+                        font-size: 14px; font-weight: 500;
+                        color: rgba(color(800), 0.5);
+                        margin-bottom: 8px;
+                        line-height: 1;
+                    }
+                    h3 {
+                        font-size: 18px; display: flex;
+                        align-items: center;
+                        .active {
+                            width: 12px; height: 12px; margin-right: 8px;
+                            border-radius: 12px; background-color: #30D65B;
+                        }
+                        span {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: color(500);
+                            padding-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        // 
+        &_title {
+            font-size: 20px; font-weight: 600; margin-bottom: 25px;
+        }
+        &_progress {
+            margin-bottom: 30px;
+            &_title {
+                font-size: 17px; font-weight: 500;
+            }
+            &_value {
+                font-size: 12px; font-weight: 700;
+            }
+            .progress {
+                margin-top: 12px; height: 10px;
+                background-color: #E9F1FA;
+                &-bar {
+                    background-color: color(500);height: 8px;
+                }
+            }
+        }
+        .chartbox {
+            h3 {
+                font-size: 18px; font-weight: 500; margin-bottom: 20px;
+            }
+        }
+    }
+    .table__footer {display: none !important;}
+
+    @media (max-width:1699px){
+        .col-xxl-5, .col-xxl-7{width: 100%; flex:0 0 100%;}
+        .card {
+            padding: 20px; 
+            &.p-20 {
+                padding: 15px;
+            }
+            .profileImg {
+                width: 70px; height: 70px;
+                margin-right: 10px;
+                em {
+                    font-size: 28px; 
+                }
+            }
+            &_leftbox {
+                
+                h2 {
+                    font-size: 26px;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+                ul {
+                    li {
+                        font-size: 14px;
+                    }
+                }
+            }
+            &_rightbox {
+                ul {
+                    row-gap: 15px;
+                    li {
+                        p {
+                            margin-bottom: 5px;
+                        }
+                        h3 {
+                            font-size: 16px; 
+                            .active {
+                                width: 8px; height: 8px; margin-right: 5px;
+                                border-radius: 8px;
+                            }
+                            span {
+                                font-size: 13px;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                }
+            } 
+            &_title {
+                font-size: 18px; margin-bottom: 20px;
+            }
+            &_progress {
+                margin-bottom: 20px;
+                &_title {
+                    font-size: 15px;
+                }
+                .progress {
+                    margin-top: 10px; height: 8px;
+                }
+            }
+            .chartbox {
+                h3 {
+                    font-size: 16px; margin-bottom: 15px;
+                }
+            }
+        }
+        
+    }
+
+    @include media-breakpoint-down(xxl){
+        .card {
+            padding: 20px 15px; 
+            .profileImg {
+                width: 60px; height: 60px;padding:2px;
+                em {
+                    font-size: 24px; 
+                }
+            }
+            &_leftbox {
+                width: 50%; flex: 0 0 50%;
+                h2 {
+                    font-size: 24px;
+                }
+                ul {
+                    li {
+                        &:not(:last-child){
+                            padding-right: 10px;margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            &_rightbox {
+                width: 50%; flex: 0 0 50%;
+                .info{
+                    h4{
+                        font-size: 20px;
+                        a{
+                            margin-left: 5px;
+                            em{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                ul {
+                    row-gap: 10px;
+                    li {
+                        width: 50%;
+                        h3 {
+                            font-size: 15px; 
+                        }
+                    }
+                }
+            } 
+            &_title {
+                font-size: 16px;
+            }
+            .chartbox {
+                h3 {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(xl){
+        .card {
+            &_leftbox {
+                h2 {
+                    font-size: 22px;
+                }
+                p{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .card {
+            &.flex-row{
+                flex-wrap: wrap;
+            }
+            &_leftbox { width: 100%;flex: 0 0 100%;
+                p{margin-bottom: 5px;}
+                h2 {
+                    font-size: 20px;
+                }
+            }
+            &_rightbox { width: 100%;flex: 0 0 100%;margin-top: 15px;
+                .info{
+                    h4{
+                        font-size: 18px;
+                        a{
+                            em{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .card {
+            .profileImg {
+                em {
+                    font-size: 22px; 
+                }
+            }
+            &_leftbox{
+                h2 {
+                    font-size: 18px;
+                }
+                ul{
+                    li{
+                        font-size: 13px;
+                    }
+                }
+            }
+            &_rightbox {
+                .info{
+                    h4{
+                        font-size: 16px;
+                        a{
+                            em{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+                ul{
+                    flex-wrap: wrap;row-gap: 5px;
+                    li{
+                        width: 100%;
+                        p{
+                            font-size: 13px;
+                        }
+                        h3{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            &_title{
+                margin-bottom: 15px;font-size: 15px;
+            }
+            &_progress{
+                margin-bottom: 15px;
+                &_title{
+                    font-size: 14px;
+                }
+            }
+            .chartbox {
+                .apexcharts-legend{ padding: 0 !important;}
+            }
+        }
+        
+    }
+
+
+} 

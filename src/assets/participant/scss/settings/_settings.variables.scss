@@ -1,0 +1,42 @@
+// color variables
+$colors: (
+  50: #ffffff,
+  100:#F5F5F5,
+  150:#CDCED0,
+  180: #E9F1FA,
+  200:#888C8f,
+  250:#667085,
+  300:#444649,
+  500:#0968AC,
+  800:#0F0F0F,
+  900:#000000,
+);
+
+@function color($color) {
+  @if map-has-key($colors, $color) {
+    @return map-get($colors, $color);
+  }
+  @error "Unknown `#{$color}` in $colors.";
+  @return null;
+}
+
+
+
+
+
+$imageurl: "../../images";
+$fonturl: "../../fonts";
+
+// fields height variable
+$field-height: 40px; // field height
+$field-height-lg: 38px; // field height responsive lg
+$field-height-md: 30px; // field height responsive md
+
+// fields padding variable
+$field-padding:10px 15px; //field padding
+$field-padding-lg: 6px 10px; //field height responsive lg
+
+
+$primary: color(500);
+$secondary: color(200);
+$success:#56E277;

@@ -1,0 +1,35 @@
+trigger:
+  branches:
+    include:
+      - release/reactdev
+
+pr: none
+
+pool: Devops_windows
+#  vmImage: 'windows-latest'
+
+variables:
+  NODE_OPTIONS: '--max-old-space-size=8192'
+
+stages:
+  - stage: buildreact
+    displayName: "Build React"
+    jobs:
+      - job: buildreact
+        steps:
+          - script: |
+              npm install --legacy-peer-deps
+            workingDirectory:
+            displayName: 'Install React dependencies'
+
+          - script: |
+                npm run build
+            workingDirectory:
+            displayName: 'Build React project'
+
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: '$(Build.SourcesDirectory)/build'
+              artifact: 'metolius_frontend_dev'
+              publishLocation: 'pipeline'
+            displayName: 'Publish React artifacts'

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "01",
+        "survey": "Auditors",
+        "company": "Codiant"
+    },
+    {
+        "id": "02",
+        "survey": "Emp Assessment",
+        "company": "Codiant"
+    },
+    {
+        "id": "03",
+        "survey": "HR assessment",
+        "company": "Codiant"
+    },
+    {
+        "id": "04",
+        "survey": "General Awareness - USA",
+        "company": "Codiant"
+    },
+    {
+        "id": "05",
+        "survey": "Inter-Department Assessment",
+        "company": "Codiant"
+    }
+]

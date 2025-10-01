@@ -1,0 +1,10 @@
+export {default as ManageSurveys} from './ManageSurveys/index.page';
+export {default as CreateSurvey} from './ManageSurveys/CreateSurvey/index.page';
+export {default as ReviewAndEdit} from './ManageSurveys/ReviewAndEdit/index.page';
+export {default as AuditTrail} from './ManageSurveys/AuditTrail/index.page';
+export {default as Resources} from './Resources/index.page';
+export {default as PreviewSurveys} from './Resources/PreviewSurveys/index.page';
+export {default as ViewCrosswalk} from './ViewCrosswalk/index.page';
+export {default as QuestionSetup} from './ManageSurveys/QuestionSetup/index.page';
+export {default as SaveResource} from './ManageSurveys/SaveResource/index.page';
+export {default as PreviewQue} from './ManageSurveys/ReviewAndEdit/PreviewQuestions';

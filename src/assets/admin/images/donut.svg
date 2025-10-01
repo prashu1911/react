@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_15621" data-name="Ellipse 15621" cx="26" cy="26" r="26" transform="translate(0.278 0.278)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_239450" data-name="Group 239450" transform="translate(-998.406 -178.406)">
+    <g id="Mask_Group_22" data-name="Mask Group 22" transform="translate(998.128 178.128)" clip-path="url(#clip-path)">
+      <g id="Layer_x0020_1" transform="translate(-3.949 -3.949)">
+        <g id="_2839251134400" transform="translate(0)">
+          <path id="Path_264940" data-name="Path 264940" d="M9.33,174.851a20.965,20.965,0,0,1,13.412-19.558L19.8,146.42A30.309,30.309,0,0,0-.01,174.851q0,1.517.146,3L9.4,176.617q-.073-.873-.073-1.766Z" transform="translate(0.01 -144.554)" fill="#ff9f51" fill-rule="evenodd"/>
+          <path id="Path_264941" data-name="Path 264941" d="M1705.946,10.11a20.976,20.976,0,0,1,26.575,19.015l9.347-.077A30.323,30.323,0,0,0,1703,1.237l2.946,8.873Z" transform="translate(-1681.299)" fill="#0968ac" fill-rule="evenodd"/>
+          <path id="Path_264942" data-name="Path 264942" d="M3562.014,2436.487a20.885,20.885,0,0,1-5.925,13.792l6.378,6.833a30.2,30.2,0,0,0,8.893-20.7l-9.346.077Z" transform="translate(-3510.776 -2405.364)" fill="#fcb92c" fill-rule="evenodd"/>
+          <path id="Path_264943" data-name="Path 264943" d="M722,3552.062a20.958,20.958,0,0,1-28.239-1.033l-6.859,6.349a30.3,30.3,0,0,0,41.477,1.515L722,3552.062Z" transform="translate(-678.147 -3505.78)" fill="#f37f73" fill-rule="evenodd"/>
+          <path id="Path_264944" data-name="Path 264944" d="M38.949,2687.829l6.86-6.349a20.875,20.875,0,0,1-4.582-9.74l-9.267,1.231a30.183,30.183,0,0,0,6.99,14.858Z" transform="translate(-31.553 -2637.695)" fill="#252549" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+    <ellipse id="Ellipse_1444" data-name="Ellipse 1444" cx="18.99" cy="18.99" rx="18.99" ry="18.99" transform="matrix(0.966, 0.259, -0.259, 0.966, 1010.977, 181.148)" fill="none" stroke="#a6a6a6" stroke-width="1" stroke-dasharray="1 6"/>
+    <ellipse id="Ellipse_1445" data-name="Ellipse 1445" cx="18.173" cy="18.173" rx="18.173" ry="18.173" transform="matrix(0.966, 0.259, -0.259, 0.966, 1011.465, 182.201)" fill="#f8f8f8"/>
+    <g id="Group_53385" data-name="Group 53385" transform="matrix(0.966, 0.259, -0.259, 0.966, 1013.491, 185.676)">
+      <ellipse id="Ellipse_1446" data-name="Ellipse 1446" cx="15.328" cy="15.328" rx="15.328" ry="15.328" transform="translate(0 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

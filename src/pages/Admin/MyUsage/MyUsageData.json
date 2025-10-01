@@ -1,0 +1,32 @@
+[
+    {
+        "id":"01",
+        "surveys": "1",
+        "outcomes":"1",
+        "intentions":"0"
+    },
+    {
+        "id":"02",
+        "surveys": "2",
+        "outcomes":"1",
+        "intentions":"1"
+    },
+    {
+        "id":"03",
+        "surveys": "24",
+        "outcomes":"8",
+        "intentions":"17"
+    },
+    {
+        "id":"04",
+        "surveys": "26",
+        "outcomes":"9",
+        "intentions":"17"
+    },
+    {
+        "id":"05",
+        "surveys": "64",
+        "outcomes":"45",
+        "intentions":"19"
+    }
+]

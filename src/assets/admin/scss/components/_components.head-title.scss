@@ -1,0 +1,12 @@
+.commonHead{
+    position:fixed;top:12px;z-index:4; left: 320px;
+    .breadcrumb{margin-bottom: 0;}
+    .commonHead_title{font-size: 18px;font-weight: 500;color:color(800); line-height: 1.5; margin-bottom: 3px;}
+    @include media-breakpoint-down(xxl){
+        top:10px; left: 300px;
+    }
+    @include media-breakpoint-down(xl){
+        position: inherit;
+        margin-bottom: 15px;
+    }
+}

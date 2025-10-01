@@ -1,0 +1,116 @@
+/* datatable pagination start */
+div.dt-container {
+  .dt-paging{
+    padding: 0;margin-bottom: 0;
+    border: 1px solid color(150); border-radius: 3px;
+    .dt-paging{
+        &-button {
+          padding:8px 10px;min-width:36px;min-height:36px;max-height:36px;font-size:14px; margin: 0;
+          text-align:center;background-color:transparent;color:rgba(color(300), 0.5) !important; border-radius: 0;
+          border:0;box-shadow:none;transition:color .3s;
+          line-height: 1;
+          &:hover, &.current, &.current:hover {
+            background:color(500) ;border:0;color:color(50);box-shadow:none;z-index:1;
+          }
+          &:not(:last-child), &:hover:not(:last-child){
+            border-right:1px solid color(150) !important;
+          }
+          &:first-child, &:last-child {
+            &:hover, &:focus {
+              background:none;border:0;box-shadow:none;color:color(50);
+            }
+          }
+          &.disabled {
+            background-color:transparent;opacity:.6; pointer-events: none;
+          }
+          &.current, &.current:hover, &.next:hover, &.previous:hover{color:color(50) !important;}
+          &.last:hover, &.first:hover{color: color(300) !important;}
+        }
+    }
+  }
+  .dt-info, .dt-length{
+    color: rgba(color(300), 0.5);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .dt-length{
+    .select2{
+      &.select2-container{width: auto !important; min-width: 64px;
+        .select2-selection{
+          &--single{height: 36px; padding: 8px 36px 8px 12px;}
+          &__rendered{color: rgba(color(300), 0.5); font-size: 14px;}
+        }
+      }
+    }
+  }
+  .select2-container--open{
+    .select2-dropdown{
+      .select2-results__option{color: #667085; padding: 8px 12px;
+        &--highlighted, &[aria-selected=true]{color: color(50);}
+      }
+    }
+  }
+  .select2-search--dropdown{display: none;}
+  @include media-breakpoint-down(xl) {
+      .page {
+        &-link {
+          font-size:14px;min-width:30px;min-height:30px;max-height:30px;
+        }
+        &-item {
+          &:not(:last-child){
+            margin-right: 5px;
+            }
+          &:first-child, &:last-child {
+            .page-link{font-size:24px;}
+          }
+        }
+    }
+  }
+  @include media-breakpoint-down(lg){
+    .dt-length{
+      .select2{
+        &.select2-container{
+          .select2-selection{
+            &--single{height: 30px; padding: 4px 24px 4px 10px;}
+          }
+        }
+      }
+    }
+    .select2-container--open{
+      .select2-dropdown{
+        .select2-results__option{padding: 4px 10px; text-align: start;
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    justify-content: center;
+    .pageLenth{flex-direction: column;gap: 0 !important;}
+    .dt-input{height: 30px;}
+    .dt-paging{
+      .ellipsis{padding: 0 8px;}
+      .dt-paging{
+        &-button {
+          padding:5px 6px;min-width:30px;min-height:30px;max-height:30px;font-size:12px; margin: 0;
+          &.next{border-right: 0 !important;}
+          &.last, &.first{
+            display: none;
+          }
+        }
+      }
+    }
+    .dt-info, .dt-length{
+      font-size: 12px;
+    }
+    .dt-length{margin-bottom: 5px;
+      .select2{
+        &.select2-container{
+          .select2-selection{
+            &__rendered{font-size: 12px;}
+          }
+        }
+      }
+    }
+  }
+}
+/* datatable pagination end */

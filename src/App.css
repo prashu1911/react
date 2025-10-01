@@ -1,0 +1,70 @@
+.mainLoader {
+  background-color: #0968ac;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mainLoader .path {
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  animation: dash 2.5s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+.tooltip-container::after {
+  content: attr(data-title); /* Use data-title instead of title */
+  position: absolute;
+  bottom: 100%;
+  left: 0%;
+  transform: translateX(-50%);
+  background-color: white;
+  color: rgb(31, 30, 30);
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 4000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tooltip-container:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ck-powered-by {
+  display: none !important;
+  opacity: 0;
+}
+
+
+.ck-balloon-panel, .ck-balloon-panel_position_border-side_right .ck-balloon-panel_visible, .ck-powered-by-balloon, .ck-powered-by__label{
+  display: none !important;
+  opacity: 0;
+}
+
+.css-1lx7dxn{
+  display: none !important;
+}
+
+#surveyInfoTab,
+#generalSettingTab,
+#scalarConfigTab,
+#systemmailTab,
+#toolsTab {
+  scroll-margin-top: 100px; /* Adjust based on your fixed header height */
+}

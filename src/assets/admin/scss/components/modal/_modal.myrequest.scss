@@ -1,0 +1,5 @@
+.myRequestModal{
+    li:not(:last-child){margin-bottom: 15px;}
+    label, span{font-size: 14px;}
+    label{color:color(800);font-weight: 500;}
+}

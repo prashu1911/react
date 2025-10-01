@@ -1,0 +1,72 @@
+.existingModal{
+    .table__footer{
+        display: none!important;
+    }
+    &.modal-dialog{
+        @media(min-width:991px){
+            max-width: 810px;
+        }
+    }
+    .form-check-input{
+        &[type=radio]{
+            ~ .form-check-label{
+                color: color(200);
+            }
+            &:checked{
+                & ~ .form-check-label {
+                    color: color(800);
+                    font-weight: 600;
+                }
+            }
+        }
+        &[type=checkbox] ~ .form-check-label{
+            padding-left:28px;padding-top:8px;font-size:13px;font-weight: 500; 
+            &::before{
+                border-radius: 4px;
+            }
+        }
+    }
+    .formToLabal{
+        font-size:16px;line-height:1.5;margin-bottom:3px;display:block;text-transform:uppercase;margin-top:20px;font-weight:600;color:color(500);
+    }
+    .form-btn{
+        padding-top: 30px;
+    }
+    .commonTable{
+        margin:20px 0 50px;
+        .form-check-input[type=checkbox] ~ .form-check-label:before{top: 0;}
+        .form-check-input[type=checkbox] ~ .form-check-label:after, 
+        .form-check-input[type=checkbox]:checked ~ .form-check-label:after{top: 4px;} 
+        .pageLenth{display: none !important;}
+        .table__footer__right{margin-left: auto;}
+    }
+
+    @include media-breakpoint-down(xl){
+        .form-btn{
+            padding-top: 20px;
+        }
+        .form-check-input[type=checkbox]{
+            & ~ .form-check-label {
+                padding-left: 24px;
+                padding-top: 7px;
+            }
+        }
+        .formToLabal{
+            margin-top: 12px;
+        }
+        .commonTable {
+            margin: 20px 0 30px;
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        .commonTable {
+            margin: 20px 0px;
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .formToLabal{
+            font-size: 14px;
+        }
+    }
+}

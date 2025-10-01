@@ -1,0 +1,7 @@
+.crosswalk{
+    .form-group{max-width: 406px; width: 100%;}
+    @include media-breakpoint-down(sm){
+        .form-group{max-width: 100%;}
+    }
+    .innerTitle{font-size: 20px;font-weight: 600;margin-bottom: 14px;}
+}

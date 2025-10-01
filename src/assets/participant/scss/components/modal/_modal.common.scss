@@ -1,0 +1,88 @@
+/* modal start */
+.commonModal{
+    border: 0;
+    .modal{
+        &-dialog{max-width: 525px;
+            &-md{
+                max-width: 440px;
+            }
+        }
+        &-title{font-size: 20px; font-weight: 600; color: color(800); line-height: 1.5;}
+        &-content{border:0;border-radius: 8px;}
+        &-header{padding: 26px 30px 13px 30px; border-bottom: 0;
+            .btn-close{
+                background-image: none; font-size: 28px; width: auto; height: 35px; 
+                padding: 0; margin-right: 0; color: color(200); opacity: 1; transition: all 0.3s ease;
+                &:hover{color: darken(color(200), 10);}
+                &:focus{box-shadow: none;}
+            }
+        }
+        &-body{padding: 13px 30px 30px 30px;
+            em{
+                font-size: 80px;display: inline-block; margin-bottom: 20px;
+                &.partially{
+                    color: #FF9F9F;
+                }
+                &.successfully{
+                    color: $success;
+                }
+            }
+            h3{
+                font-size: 24px;font-weight: 600;margin-bottom: 20px;line-height: 32px;
+            }
+            p{
+                font-size: 14px;line-height: 21px;color: rgba(color(800),0.6);margin-bottom: 35px;
+            }
+        }
+    }
+    @include media-breakpoint-down(xl) {
+        .modal{
+            &-dialog{max-width: 450px;
+                &-md{
+                    max-width: 360px;
+                }
+            }
+            &-title{font-size: 18px;}
+            &-header{padding: 20px 20px 10px 20px;
+                .btn-close{
+                     font-size: 24px; height: 30px; 
+                }
+            }
+            &-body{padding: 10px 20px 20px 20px;
+                em{
+                    font-size: 60px; margin-bottom: 15px;
+                }
+                h3{
+                    font-size: 22px;margin-bottom: 15px;line-height: 28px;
+                }
+                p{
+                   margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .modal{
+            &-title{font-size: 16px;}
+            &-body{
+                em{
+                    font-size: 50px;
+                }
+                h3{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .modal{
+            &-dialog{max-width: 100%;
+                &-md{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/* modal end */

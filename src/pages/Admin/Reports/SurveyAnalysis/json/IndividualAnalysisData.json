@@ -1,0 +1,26 @@
+[
+    {
+        "id":"01",
+        "DepartmentName":"Overall",
+        "name":"shriti, c",
+        "ParticipantName":"user907",
+        "email":"shivankita@mailinator.com",
+        "status":""
+    },
+    {
+        "id":"02",
+        "DepartmentName": "Business Development",
+        "name":"Zoloin, K",
+        "ParticipantName":"user902",
+        "email":"zoloin@mailinator.com",
+        "status":""
+    },
+    {
+        "id":"03",
+        "DepartmentName": "React JS",
+        "name":"Suveer, C",
+        "ParticipantName":"user901",
+        "email":"suveer@mailinator.com",
+        "status":""
+    }
+]

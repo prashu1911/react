@@ -1,0 +1,86 @@
+/* html */
+html {
+    height: 100%;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    color: color(800);
+    position: relative;
+    padding-top: 85px;
+    background-color: #ffffff;
+    @media (max-width: 1399px){
+      font-size: 16px;
+    }
+    @include media-breakpoint-down(xxl) {
+      padding-top: 77px;
+    }
+    @include media-breakpoint-down(xl) {
+      padding-top: 62px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;padding-top: 49px;
+    }
+  }
+
+  /* anchor tag */
+  a, .btn {
+    text-decoration: none;  transition: all 0.5s;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  /* common focus */
+  :focus {
+    outline: 0 !important;
+  }
+  
+  /* common scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    @include media-breakpoint-down(lg) {
+      width: 4px;
+      height: 4px;
+    }
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    background-color: #e3e3e3;
+    border-radius: 30px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: none;
+    background-color: color(500);
+    border-radius: 30px;
+  }
+  
+/* container */
+.container{
+  @include media-breakpoint-up(xl) {
+    max-width: 1174px;
+  }
+  @include media-breakpoint-down(xl) {
+    max-width: 100%;
+  }
+}
+
+.primary-color{
+  color: color(500) !important; 
+}
+
+
+.participantLoader{
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media-breakpoint-down(xl) {
+    height: calc(100vh - 120px);
+  }
+  @include media-breakpoint-down(sm) {
+    height: calc(100vh - 100px);
+  }
+}

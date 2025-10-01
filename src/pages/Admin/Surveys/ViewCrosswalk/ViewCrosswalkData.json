@@ -1,0 +1,323 @@
+
+[
+    {
+        "id": "01",
+        "outcomes": "Employee Satisfaction",
+        "intentions": "Assessing workplace amenities and their impact on job satisfaction",
+        "intentions name": "Amenities Impact",
+        "question2": "How do the workplace amenities affect your job satisfaction?",
+        "jump sequence": ""
+    },
+    {
+        "id": "02",
+        "outcomes": "Team Dynamics",
+        "intentions": "Evaluating perceptions of collaboration among team members",
+        "intentions name": "Collaboration Assessment",
+        "question2": "How well do you feel your team collaborates on projects?",
+        "jump sequence": ""
+    },
+    {
+        "id": "03",
+        "outcomes": "Work-Life Balance",
+        "intentions": "Understanding employee views on work-life balance policies",
+        "intentions name": "Balance Evaluation",
+        "question2": "Do you believe the company promotes a healthy work-life balance?",
+        "jump sequence": ""
+    },
+    {
+        "id": "04",
+        "outcomes": "Management Effectiveness",
+        "intentions": "Gathering feedback on management support and guidance",
+        "intentions name": "Support Perception",
+        "question2": "How effective is your management in providing support?",
+        "jump sequence": ""
+    },
+    {
+        "id": "05",
+        "outcomes": "Career Growth Opportunities",
+        "intentions": "Assessing employee perceptions of career development options",
+        "intentions name": "Growth Opportunities Assessment",
+        "question2": "Do you feel there are enough opportunities for career advancement?",
+        "jump sequence": ""
+    },
+    {
+        "id": "06",
+        "outcomes": "Cultural Fit",
+        "intentions": "Evaluating employee perspectives on workplace culture and values",
+        "intentions name": "Culture Assessment",
+        "question2": "How well do you think the workplace culture aligns with your values?",
+        "jump sequence": ""
+    },
+    {
+        "id": "07",
+        "outcomes": "Communication Clarity",
+        "intentions":  "Assessing the effectiveness of communication within teams.",
+        "intentions name":"Communication Effectiveness", 
+        "question2":"How clear and effective is communication in your department?", 
+        "jump sequence":""
+    },
+    {
+        "id":"08", 
+        "outcomes":"Safety Perception", 
+        "intentions":"Evaluating employee opinions on workplace safety measures.", 
+        "intentions name":"Safety Assessment", 
+        "question2":"Do you feel that safety measures in the workplace are adequate?", 
+        "jump sequence":""
+    },
+    {
+        "id":"09", 
+        "outcomes":"Diversity Awareness", 
+        "intentions":"Understanding employee views on diversity and inclusion efforts.", 
+        "intentions name":"Diversity Evaluation", 
+        "question2":"How effective do you find the company's diversity initiatives?", 
+        "jump sequence":""
+    },
+    {
+        "id":"10", 
+        "outcomes":"Workload Management", 
+        "intentions":"Assessing perceptions of workload and stress levels among employees.", 
+        "intentions name":"Stress Level Assessment", 
+        "question2":"Do you feel your current workload is manageable?", 
+        "jump sequence":""
+    },
+    {
+        "id": "11",
+        "outcomes": "Employee Satisfaction",
+        "intentions": "Assessing workplace amenities and their impact on job satisfaction",
+        "intentions name": "Amenities Impact",
+        "question2": "How do the workplace amenities affect your job satisfaction?",
+        "jump sequence": ""
+    },
+    {
+        "id": "12",
+        "outcomes": "Team Dynamics",
+        "intentions": "Evaluating perceptions of collaboration among team members",
+        "intentions name": "Collaboration Assessment",
+        "question2": "How well do you feel your team collaborates on projects?",
+        "jump sequence": ""
+    },
+    {
+        "id": "13",
+        "outcomes": "Work-Life Balance",
+        "intentions": "Understanding employee views on work-life balance policies",
+        "intentions name": "Balance Evaluation",
+        "question2": "Do you believe the company promotes a healthy work-life balance?",
+        "jump sequence": ""
+    },
+    {
+        "id": "14",
+        "outcomes": "Management Effectiveness",
+        "intentions": "Gathering feedback on management support and guidance",
+        "intentions name": "Support Perception",
+        "question2": "How effective is your management in providing support?",
+        "jump sequence": ""
+    },
+    {
+        "id": "15",
+        "outcomes": "Career Growth Opportunities",
+        "intentions": "Assessing employee perceptions of career development options",
+        "intentions name": "Growth Opportunities Assessment",
+        "question2": "Do you feel there are enough opportunities for career advancement?",
+        "jump sequence": ""
+    },
+    {
+        "id": "16",
+        "outcomes": "Cultural Fit",
+        "intentions": "Evaluating employee perspectives on workplace culture and values",
+        "intentions name": "Culture Assessment",
+        "question2": "How well do you think the workplace culture aligns with your values?",
+        "jump sequence": ""
+    },
+    {
+        "id": "17",
+        "outcomes": "Communication Clarity",
+        "intentions":  "Assessing the effectiveness of communication within teams.",
+        "intentions name":"Communication Effectiveness", 
+        "question2":"How clear and effective is communication in your department?", 
+        "jump sequence":""
+    },
+    {
+        "id":"18", 
+        "outcomes":"Safety Perception", 
+        "intentions":"Evaluating employee opinions on workplace safety measures.", 
+        "intentions name":"Safety Assessment", 
+        "question2":"Do you feel that safety measures in the workplace are adequate?", 
+        "jump sequence":""
+    },
+    {
+        "id":"19", 
+        "outcomes":"Diversity Awareness", 
+        "intentions":"Understanding employee views on diversity and inclusion efforts.", 
+        "intentions name":"Diversity Evaluation", 
+        "question2":"How effective do you find the company's diversity initiatives?", 
+        "jump sequence":""
+    },
+    {
+        "id":"20", 
+        "outcomes":"Workload Management", 
+        "intentions":"Assessing perceptions of workload and stress levels among employees.", 
+        "intentions name":"Stress Level Assessment", 
+        "question2":"Do you feel your current workload is manageable?", 
+        "jump sequence":""
+    },
+    {
+        "id": "21",
+        "outcomes": "Employee Satisfaction",
+        "intentions": "Assessing workplace amenities and their impact on job satisfaction",
+        "intentions name": "Amenities Impact",
+        "question2": "How do the workplace amenities affect your job satisfaction?",
+        "jump sequence": ""
+    },
+    {
+        "id": "22",
+        "outcomes": "Team Dynamics",
+        "intentions": "Evaluating perceptions of collaboration among team members",
+        "intentions name": "Collaboration Assessment",
+        "question2": "How well do you feel your team collaborates on projects?",
+        "jump sequence": ""
+    },
+    {
+        "id": "23",
+        "outcomes": "Work-Life Balance",
+        "intentions": "Understanding employee views on work-life balance policies",
+        "intentions name": "Balance Evaluation",
+        "question2": "Do you believe the company promotes a healthy work-life balance?",
+        "jump sequence": ""
+    },
+    {
+        "id": "24",
+        "outcomes": "Management Effectiveness",
+        "intentions": "Gathering feedback on management support and guidance",
+        "intentions name": "Support Perception",
+        "question2": "How effective is your management in providing support?",
+        "jump sequence": ""
+    },
+    {
+        "id": "25",
+        "outcomes": "Career Growth Opportunities",
+        "intentions": "Assessing employee perceptions of career development options",
+        "intentions name": "Growth Opportunities Assessment",
+        "question2": "Do you feel there are enough opportunities for career advancement?",
+        "jump sequence": ""
+    },
+    {
+        "id": "26",
+        "outcomes": "Cultural Fit",
+        "intentions": "Evaluating employee perspectives on workplace culture and values",
+        "intentions name": "Culture Assessment",
+        "question2": "How well do you think the workplace culture aligns with your values?",
+        "jump sequence": ""
+    },
+    {
+        "id": "27",
+        "outcomes": "Communication Clarity",
+        "intentions":  "Assessing the effectiveness of communication within teams.",
+        "intentions name":"Communication Effectiveness", 
+        "question2":"How clear and effective is communication in your department?", 
+        "jump sequence":""
+    },
+    {
+        "id":"28", 
+        "outcomes":"Safety Perception", 
+        "intentions":"Evaluating employee opinions on workplace safety measures.", 
+        "intentions name":"Safety Assessment", 
+        "question2":"Do you feel that safety measures in the workplace are adequate?", 
+        "jump sequence":""
+    },
+    {
+        "id":"29", 
+        "outcomes":"Diversity Awareness", 
+        "intentions":"Understanding employee views on diversity and inclusion efforts.", 
+        "intentions name":"Diversity Evaluation", 
+        "question2":"How effective do you find the company's diversity initiatives?", 
+        "jump sequence":""
+    },
+    {
+        "id":"30", 
+        "outcomes":"Workload Management", 
+        "intentions":"Assessing perceptions of workload and stress levels among employees.", 
+        "intentions name":"Stress Level Assessment", 
+        "question2":"Do you feel your current workload is manageable?", 
+        "jump sequence":""
+    },
+    {
+        "id": "31",
+        "outcomes": "Employee Satisfaction",
+        "intentions": "Assessing workplace amenities and their impact on job satisfaction",
+        "intentions name": "Amenities Impact",
+        "question2": "How do the workplace amenities affect your job satisfaction?",
+        "jump sequence": ""
+    },
+    {
+        "id": "32",
+        "outcomes": "Team Dynamics",
+        "intentions": "Evaluating perceptions of collaboration among team members",
+        "intentions name": "Collaboration Assessment",
+        "question2": "How well do you feel your team collaborates on projects?",
+        "jump sequence": ""
+    },
+    {
+        "id": "33",
+        "outcomes": "Work-Life Balance",
+        "intentions": "Understanding employee views on work-life balance policies",
+        "intentions name": "Balance Evaluation",
+        "question2": "Do you believe the company promotes a healthy work-life balance?",
+        "jump sequence": ""
+    },
+    {
+        "id": "34",
+        "outcomes": "Management Effectiveness",
+        "intentions": "Gathering feedback on management support and guidance",
+        "intentions name": "Support Perception",
+        "question2": "How effective is your management in providing support?",
+        "jump sequence": ""
+    },
+    {
+        "id": "35",
+        "outcomes": "Career Growth Opportunities",
+        "intentions": "Assessing employee perceptions of career development options",
+        "intentions name": "Growth Opportunities Assessment",
+        "question2": "Do you feel there are enough opportunities for career advancement?",
+        "jump sequence": ""
+    },
+    {
+        "id": "36",
+        "outcomes": "Cultural Fit",
+        "intentions": "Evaluating employee perspectives on workplace culture and values",
+        "intentions name": "Culture Assessment",
+        "question2": "How well do you think the workplace culture aligns with your values?",
+        "jump sequence": ""
+    },
+    {
+        "id": "37",
+        "outcomes": "Communication Clarity",
+        "intentions":  "Assessing the effectiveness of communication within teams.",
+        "intentions name":"Communication Effectiveness", 
+        "question2":"How clear and effective is communication in your department?", 
+        "jump sequence":""
+    },
+    {
+        "id":"38", 
+        "outcomes":"Safety Perception", 
+        "intentions":"Evaluating employee opinions on workplace safety measures.", 
+        "intentions name":"Safety Assessment", 
+        "question2":"Do you feel that safety measures in the workplace are adequate?", 
+        "jump sequence":""
+    },
+    {
+        "id":"39", 
+        "outcomes":"Diversity Awareness", 
+        "intentions":"Understanding employee views on diversity and inclusion efforts.", 
+        "intentions name":"Diversity Evaluation", 
+        "question2":"How effective do you find the company's diversity initiatives?", 
+        "jump sequence":""
+    },
+    {
+        "id":"40", 
+        "outcomes":"Workload Management", 
+        "intentions":"Assessing perceptions of workload and stress levels among employees.", 
+        "intentions name":"Stress Level Assessment", 
+        "question2":"Do you feel your current workload is manageable?", 
+        "jump sequence":""
+    }
+]

@@ -1,0 +1,176 @@
+.flatpickr{
+  &_wrap{position: relative;}
+  .form-control{background-color: color(50) !important; padding-right: 36px; color: color(800) !important;
+    &.bg-gray{background-color: color(100) !important;border: 0;font-size: 14px; color: color(800);
+      &::placeholder{color: color(250);}
+    }
+  }
+  .rightIcon{position: absolute;right: 15px;top: 50%;transform: translateY(-50%); color: color(250); font-size: 18px;}
+  &-weekdays{background-color: color(500);}
+  &-current-month {
+    padding: 0; font-size: 14px; font-weight: 500;color: color(800); height: auto; top: -5px;
+    .numInputWrapper {
+      .numInput {
+        padding: 8px; color: color(800); font-weight: 500;
+      }
+        &:hover {
+          background-color: color(50);
+      }
+    }
+    .flatpickr{
+      &-monthDropdown-months, input.cur-year {
+        font-size: 14px;font-weight: 500; color: color(800);
+      }
+      &-monthDropdown-months {
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+  }
+  &-months {
+    position: relative;
+      .flatpickr{
+        &-prev-month, &-next-month {
+          background: color(500);
+          color: color(50);
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+          svg {
+            display: none;
+          }
+          &::before {
+            content: "";
+            @include absolutecenter("both");
+            font-size: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+        &-prev-month {
+          &::before {
+            content: "\e916";
+            font-family: icomoon, sans-serif !important;
+          }
+        }
+        &-next-month {
+          &::before {
+            content: "\e916";
+            font-family: icomoon, sans-serif !important;
+            transform: rotateY(180deg) translate(-25%, -50%);
+            left: 25%;
+          }
+        }
+      }
+  }
+  &-calendar {
+    box-shadow: none;
+    &.open {
+      padding: 8px;
+      width: auto;
+      box-shadow: 0 3px 30px rgba(color(500), 0.08);
+      width: 280px;
+    }
+    &.arrowTop {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &-innerContainer {
+    justify-content: center;
+  }
+  &-day {
+    border-radius: 5px; color: color(800);height: 35px; 
+    line-height: 32px; max-width: 35px;
+    &.selected, &.selected.inRange, &.selected:focus, &.selected:hover, 
+    &.selected.prevMonthDay, &.selected.nextMonthDay, &.startRange, 
+    &.startRange.inRange, &.startRange:focus, &.startRange:hover, 
+    &.startRange.prevMonthDay, &.startRange.nextMonthDay, &.endRange:hover, 
+    &.endRange, &.endRange.inRange, &.endRange:focus, &.endRange.prevMonthDay, 
+    &.endRange.nextMonthDay, &.today.selected {
+      border-color:color(50);
+      background: color(500);
+      color: color(50);
+    }
+    &.inRange,
+    &.selected.startRange + .endRange:not(:nth-child(7n + 1)),
+    &.startRange.startRange + .endRange:not(:nth-child(7n + 1)),
+    &.endRange.startRange + .endRange:not(:nth-child(7n + 1)) {
+      box-shadow: none; transition: all 0.3s ease;
+    }
+    &.today {border-color: color(50); background-color: color(500); color: color(50);} 
+    &.inRange, &.prevMonthDay.inRange, &.nextMonthDay.inRange, 
+    &.today.inRange, &.prevMonthDay.today.inRange, 
+    &.nextMonthDay.today.inRange, &.today:hover, &.today:focus {
+      background: darken(color(500), 5);
+      color: color(50);
+      border-color: color(500);
+    }
+    &.inRange, &.prevMonthDay.inRange, &.nextMonthDay.inRange, 
+    &.today.inRange, &.prevMonthDay.today.inRange, &.nextMonthDay.today.inRange, 
+    &:hover, &.prevMonthDay:hover, &.nextMonthDay:hover, &:focus, 
+    &.prevMonthDay:focus, &.nextMonthDay:focus{
+      background: color(150);
+      border-color: color(150);
+    }
+    &.selected.startRange.endRange, 
+    &.startRange.startRange.endRange, 
+    &.endRange.startRange.endRange{
+      border-radius: 5px;
+    }
+  }
+  &-days{margin: 1px 0;}
+  &-rContainer, &-days, .dayContainer {
+    width: 100%;
+  }
+}
+.rangeMode {
+  .flatpickr-day {
+    color: color(800);
+    opacity: 1;
+    border: none;
+    max-width: inherit;
+    width: inherit;
+    text-align: center;
+    border-radius: 5px;
+    &.inRange{border-radius: 0;}
+    &.today{color: color(50);
+      &.inRange{color: color(800);}
+    }
+    &.prevMonthDay, &.nextMonthDay{
+      color: rgba(#393939, 0.3);
+    }
+    &.selected, &.selected.inRange, 
+    &.selected:focus, &.selected:hover, 
+    &.selected.prevMonthDay, &.selected.nextMonthDay, 
+    &.startRange, &.startRange.inRange, 
+    &.startRange:focus, &.startRange:hover, 
+    &.startRange.prevMonthDay, &.startRange.nextMonthDay, 
+    &.endRange:hover, &.endRange, &.endRange.inRange, 
+    &.endRange:focus, &.endRange.prevMonthDay, 
+    &.endRange.nextMonthDay, &.today.selected{
+      color: color(50); background-color: color(500);
+    }
+  }
+}
+
+.dayContainer {
+  max-width: 100%;
+  min-width: auto;
+  background: color(50);
+  .today:not(.selected) {
+     background: #3F8DC1;
+  }
+}
+span {
+  &.flatpickr-weekday {
+    font-size: 12px;
+    color: color(50);
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+

@@ -1,0 +1,185 @@
+.editOutcomeModal {
+    .selectPicker{
+        width: 110px;
+        flex-shrink: 0;
+    }
+    label{
+        margin-right: 10px;
+        width: auto;
+    }
+    .form-group{
+        .form-control{
+            line-height: 14px;
+        }
+    }
+
+    .outcomeName{
+        .selectPicker {
+            width: 150px;
+        }
+        &_select{
+            .form-group{
+                &:first-child{
+                    margin-right: 33px;
+                }
+                .form-label{
+                    font-size: 14px;
+                    color: color(300);
+                    width: auto;
+                    margin-right: 10px;
+                    flex-shrink: 0;
+                }
+            }
+            &_type{
+                .selectPicker {
+                    width: 152px;
+                }
+            }
+            &_color{
+                .selectPicker {
+                    width: 126px;
+                    .css-13cymwt-control{
+                        background-color: color(150);
+                    }
+                    
+                }
+            }
+        }
+        .iconDrag{
+            position: absolute;
+            left: 30px;
+            top: 17px;                
+            em{
+                font-size: 16px;
+            }
+        }
+        textarea{
+            border: none;
+            border-bottom: 1px dashed color(150);
+            min-height: auto;
+            background: transparent;
+            padding: 15px 0px 10px;
+            border-radius: 0px;
+            font-size: 20px;
+            height: 50px;
+            font-weight: 500;
+            color: color(250);
+            line-height: 1;
+            margin-bottom: 10px;
+            @include placeholder {
+                font-size: 20px;
+                font-weight: 500;
+                color: color(250);
+            }
+        }
+    }
+    .addOutcomes{
+        background-color: color(50);
+    }
+   
+    .outcomeDescription{
+        font-size: 14px !important;
+        font-weight: 500 !important;
+        border-bottom: 0px !important;
+        padding: 0px !important;
+        line-height: 17px !important;
+        @include placeholder {
+            line-height: 17px !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+        }
+    }
+
+    @media (max-width: 1399px) {
+        .outcomeName {
+            &_select{
+                .form-group{
+                    &:first-child{
+                        margin-right: 15px;
+                    }
+                }
+            }
+            textarea{
+                font-size: 18px;
+                padding: 17px 0px 10px;
+                @include placeholder {
+                    font-size: 18px;
+                }
+            }
+            .iconDrag{
+                left: 15px;
+            }
+        }
+
+
+    }
+    @include media-breakpoint-down(xl){
+        .addOutcomes{
+            .dropdown{
+                &-menu{
+                    padding: 5px 0px;
+                }
+                &-item{
+                    padding: 5px 15px;
+                    font-size: 14px;
+                }
+                
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        .form-group{
+            .form-control{
+                line-height: 21px;
+            }
+        }
+        .outcomeName{
+            &_select{
+                .gap-lg-0{
+                    width: calc(100% - 160px)
+                }
+                .form-group{
+                    &:first-child{
+                        margin-right: 0px;
+                    }
+                }
+                &_type,&_color{
+                    .selectPicker{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .outcomeName{
+            &_select{
+                .gap-lg-0{
+                    width: 100%;
+                }
+                .form-group{
+                    width: 100%;
+                }
+            }
+            textarea{
+                font-size: 16px;
+                @include placeholder {
+                    font-size: 16px;
+                }
+            }
+            .iconDrag{
+                left: 10px;
+                top: 16px;
+            }
+        } 
+    }
+    @include media-breakpoint-down(sm){
+        .outcomeName{
+            &_select{
+                
+            }
+        }
+    }
+}

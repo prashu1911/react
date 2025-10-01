@@ -1,0 +1,26 @@
+.downloadDropdown{
+    .dropdown{
+        &-toggle{
+            em{
+                font-size: 16px !important;
+            }
+        }
+        &-menu{
+            padding: 5px 0px;
+            min-width: 100px;
+        }
+        button{
+            padding: 10px;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .dropdown-item{
+        display: flex;
+        align-items: center;
+        color: color(250);
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+}

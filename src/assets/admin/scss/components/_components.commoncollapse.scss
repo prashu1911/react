@@ -1,0 +1,42 @@
+.commonCollapse{
+    padding: 15px 16px;
+    background-color: color(100);
+    font-size: 14px;
+    font-weight: 500;
+    color: color(300);
+    border: 1px solid #E6E6E6;
+    border-top: none;
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    em{
+        font-size: 8px;
+        color: color(250);
+        transition: ease-in 0.3s;
+    }
+    &[aria-expanded="true"]{
+        .icon-drop-down{
+            transform: rotateX(180deg) !important;
+            transition: ease-in 0.3s;
+        }
+    }
+
+    .icon-drop-down{
+        &.top{
+            transform: rotateX(180deg) !important;
+            transition: ease-in 0.3s;
+        }
+    } 
+
+    @media(max-width: 1399px) {
+        padding: 12px;
+    }
+
+    @include media-breakpoint-down(md){
+        padding: 10px;
+        font-size: 13px;
+        
+    }
+}

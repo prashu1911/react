@@ -1,0 +1,42 @@
+.colorOpacity {
+    display: flex;
+    align-items: center;
+    span {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    input[type="range"] {
+        appearance: none;
+        width: calc(100% - 60px);
+        height: 8px;
+        border-radius: 5px;
+        background: linear-gradient(to right, color(500) 50%, #cdced0 50%);
+        outline: none;
+        transition: opacity 0.2s;
+        padding: 0px;
+        &::-webkit-slider-thumb {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background:  color(500);
+            cursor: pointer;
+            &::-moz-range-thumb {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background:  color(500);
+                cursor: pointer;
+            }
+        }
+    }
+    .form-control {
+        border: transparent;
+        &:focus {
+            border-color: transparent;
+            box-shadow: none;
+        }
+
+    }
+}
