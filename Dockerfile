@@ -1,26 +1,19 @@
-# Stage 1: Build the React application
-FROM node:18-alpine as builder
-
+# Stage 1: Build React app
+FROM node:18 AS builder
 WORKDIR /app
 
-COPY package.json ./
-COPY package-lock.json ./
+# Copy package files and install dependencies
+COPY package*.json ./
+RUN npm install
 
-RUN npm install --legacy-peer-deps
-
-COPY . ./
-
+# Copy all files and build
+COPY . .
 ENV NODE_OPTIONS=--max-old-space-size=4096
 RUN npm run build
 
-# Stage 2: Serve the application with Nginx
-FROM nginx:stable-alpine
-
-# Copy the build output from the builder stage to Nginx's public directory
+# Stage 2: Serve with Nginx
+FROM nginx:alpine
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# Expose port 80
 EXPOSE 80
-
-# Start Nginx
 CMD ["nginx", "-g", "daemon off;"]
